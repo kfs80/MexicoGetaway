@@ -1,52 +1,42 @@
 # =====================================================================
-#  Mexico Resort Package Finder - settings (v5)
+#  Mexico Resort Package Finder - settings (v6, CheapCaribbean price-cache API)
 # =====================================================================
 
 origins = ["DSM"]
 
 [trip]
 lookahead_days    = 210            # 7-month outlook
-min_lead_days     = 21             # don't search trips departing sooner than this
-min_nights        = 5              # 5 to 7 nights
+min_lead_days     = 21             # ignore trips departing sooner than this
+min_nights        = 5              # the site offers 3-7 nights; one request per length
 max_nights        = 7
-# Fewer weekdays = a full sweep of the calendar finishes sooner (fresher prices).
 depart_weekdays   = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 [party]
-adults            = 2              # price_total = per-person price x adults
+adults            = 2
 children          = 0
 
-[schedule]
-request_budget_per_run = 50        # hard cap on ZenRows requests per run. Each run searches the
-                                   # NEXT 50 date/destination combos (rotating cursor), so the
-                                   # whole calendar is covered over several runs.
-run_time_limit_minutes = 25        # stop scraping gracefully after this long
-stale_after_days       = 14        # drop a deal if it hasn't been re-seen in this many days
-# NOTE: the old wide_sweep_days / pricing_refresh_hours whitelist tiers were never
-# implemented by the scraper, so they have been removed to avoid confusion.
-
-[output]
-max_packages      = 300            # total deals kept in site/data/packages.json
-max_per_resort    = 3              # cheapest N date options kept per resort
+[pricing]
+# What the API's price means. Assumed PER PERSON (typical for CheapCaribbean, includes air).
+# Check one deal against the website; if it's already the total for the party, set "total".
+unit = "per_person"
 
 [resort_filters]
-min_star_rating       = 4.0        # enforced when the star rating can be parsed
-min_user_rating       = 8.0        # enforced only when a user rating is parsed (10-pt scale)
-require_all_inclusive = true       # enforced: card text must say "all inclusive"
-must_have_beachfront  = false      # NOT enforceable from search cards; needs a vetted resort
-                                   # whitelist. Left off so it doesn't silently drop everything.
-adults_only           = false      # not enforced yet
+min_star_rating       = 4.0
+require_all_inclusive = true       # uses the site's own All_Inclusive flag
+adults_only           = false
+# Not available in this data: guest rating and beachfront. The hotel list does have
+# Beach_Relaxing / Beach_Swimming scores (scale unverified) if you want a beach proxy later.
 
 [providers]
-active = ["cheapcaribbean"]        # expedia has no parser yet
+active = ["cheapcaribbean"]        # more sites = more adapters; see README
 pause_seconds = 3.0
 
+[output]
+max_packages          = 400        # total deals kept in site/data/packages.json
+max_per_resort_nights = 2          # cheapest N departure dates per resort per trip length
+
 [proxy]
-# Routes requests through ZenRows to get past Cloudflare/403 blocks.
-# js_render + antibot (+ premium proxy) can cost ~25x a basic request, so watch your credits:
-# 50 requests x 2 runs/day can add up fast.
+# Used only if the direct request to the API is blocked (e.g. from GitHub's servers).
+# The API is plain JSON, so no JS rendering is needed, which makes ZenRows cheap here.
 enable        = true
-provider      = "zenrows"
-premium_proxy = true
-country       = "us"
-wait_for      = ".hotel-card"      # CSS selector ZenRows waits for. Must match the real page.
+premium_proxy = false
