@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mexico Resort Deals</title>
+<style>
+  :root { --bg:#f6f7f9; --ink:#1d2433; --mute:#6b7385; --line:#dfe3ea; --accent:#2b5cff; --card:#fff; --foot:#fafbfc; --img:#eef1f5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12151b; --ink:#e8ebf2; --mute:#98a1b5; --line:#2a3040; --accent:#7d9bff; --card:#1a1f29; --foot:#161a23; --img:#222836; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.35 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:24px 20px 16px; background:var(--card); border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 8px; font-size:24px; }
+  .sub { color:var(--mute); font-size:14px; }
+
+  .controls { padding:20px; display:flex; gap:16px; flex-wrap:wrap; align-items:center; }
+  select { font:inherit; padding:8px 12px; border-radius:6px; border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; }
+
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:20px; padding:0 20px 40px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;
+          transition:transform .2s, box-shadow .2s; display:flex; flex-direction:column; text-decoration:none; color:inherit; }
+  .card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.12); }
+  .card-img { height:100px; background:linear-gradient(135deg, var(--img), var(--line)); border-bottom:1px solid var(--line); position:relative; }
+  .tag-deal { position:absolute; top:12px; right:12px; background:#16a34a; color:#fff; padding:4px 8px; border-radius:4px; font-size:11px; font-weight:700; }
+  .low { color:#16a34a; font-weight:600; }
+  .tag-ai { position:absolute; top:12px; left:12px; background:var(--ink); color:var(--bg); padding:4px 8px; border-radius:4px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
+  .card-body { padding:16px; flex-grow:1; }
+  .region { font-size:12px; color:var(--mute); font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-bottom:4px; }
+  .resort { font-size:18px; font-weight:700; margin:0 0 8px; line-height:1.2; }
+  .stars { color:#f59e0b; letter-spacing:2px; margin-bottom:12px; font-size:14px; }
+  .stars .meta { color:var(--mute); font-size:12px; letter-spacing:0; }
+  .details { display:flex; flex-direction:column; gap:6px; font-size:13px; color:var(--mute); }
+  .card-footer { padding:16px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:flex-end; background:var(--foot); }
+  .price { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; }
+  .price-sub { font-size:11px; color:var(--mute); font-weight:400; }
+  .provider { font-size:12px; font-weight:600; color:var(--accent); }
+  .empty { padding:20px; color:var(--mute); grid-column:1/-1; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌴 Mexico Resort Deals</h1>
+  <div class="sub" id="last-updated">Loading…</div>
+</header>
+
+<div class="controls">
+  <select id="sort" aria-label="Sort">
+    <option value="price">Sort by Price (Low to High)</option>
+    <option value="date">Sort by Date (Soonest)</option>
+    <option value="deal">Sort by Best Deal (% below typical)</option>
+    <option value="rating">Sort by Stars (Highest)</option>
+  </select>
+  <select id="filter-region" aria-label="Region">
+    <option value="all">All Regions</option>
+  </select>
+  <select id="filter-nights" aria-label="Nights">
+    <option value="all">Any trip length</option>
+  </select>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+let PACKAGES = [];
+
+const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : '#';
+const parseDay = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); }; // local time, no UTC off-by-one
+const fmtDay = s => parseDay(s).toLocaleDateString(undefined, { weekday:'short', month:'short', day:'numeric', year:'numeric' });
+const renderStars = n => n == null ? '' : '★'.repeat(Math.floor(n)) + (n % 1 ? '½' : '');
+const money = n => '$' + Math.round(n).toLocaleString();
+
+function render() {
+  const sort = $('#sort').value;
+  const region = $('#filter-region').value;
+  const nights = $('#filter-nights').value;
+  const pkgs = PACKAGES.filter(p => (region === 'all' || p.code === region) && (nights === 'all' || String(p.nights) === nights));
+
+  if (sort === 'price') pkgs.sort((a, b) => a.price_total - b.price_total);
+  if (sort === 'date')  pkgs.sort((a, b) => parseDay(a.depart_date) - parseDay(b.depart_date));
+  if (sort === 'deal') pkgs.sort((a, b) => (b.pct_below ?? 0) - (a.pct_below ?? 0));
+  if (sort === 'rating') pkgs.sort((a, b) => (b.user_rating ?? b.stars ?? 0) - (a.user_rating ?? a.stars ?? 0));
+
+  if (!pkgs.length) {
+    $('#grid').innerHTML = '<div class="empty">' + (PACKAGES.length
+      ? 'No packages match these filters.'
+      : 'No deals yet. The scraper hasn\'t found any packages, check the latest Actions run.') + '</div>';
+    return;
+  }
+
+  $('#grid').innerHTML = pkgs.map(p => {
+    const ai = (p.amenities || []).includes('All-Inclusive') ? '<div class="tag-ai">All-Inclusive</div>' : '';
+    const extras = (p.amenities || []).filter(a => a !== 'All-Inclusive').join(' · ');
+    const rating = p.user_rating != null ? ` (${esc(p.user_rating)}/10)` : '';
+    const deal = (p.pct_below ?? 0) >= 10 ? `<div class="tag-deal">${esc(p.pct_below)}% below typical</div>` : '';
+    const low = (p.hist_days ?? 0) >= 7 && p.hist_min != null
+      ? `<div class="low">Lowest seen in ${esc(p.hist_days)} days: ${money(p.hist_min)}</div>` : '';
+    return `
+      <a href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener noreferrer" class="card">
+        <div class="card-img">${ai}${deal}</div>
+        <div class="card-body">
+          <div class="region">${esc(p.region)}</div>
+          <h2 class="resort">${esc(p.resort)}</h2>
+          <div class="stars">${renderStars(p.stars)} <span class="meta">${rating}</span></div>
+          <div class="details">
+            <div>✈️ ${esc(p.airline || 'Flight included')} · ${esc(fmtDay(p.depart_date))} → ${esc(fmtDay(p.return_date))}</div>
+            <div>⏱️ ${esc(p.nights)} nights · typical for this resort: ${money(p.typical_total)}</div>
+            ${low}
+            ${extras ? `<div>🌴 ${esc(extras)}</div>` : ''}
+          </div>
+        </div>
+        <div class="card-footer">
+          <div>
+            <div class="price">${money(p.price_total)}</div>
+            <div class="price-sub">Total for 2 adults${p.price_pp ? ' · ' + money(p.price_pp) + ' pp' : ''}</div>
+          </div>
+          <div class="provider">${esc(p.provider)} ↗</div>
+        </div>
+      </a>`;
+  }).join('');
+}
+
+async function init() {
+  try {
+    const res = await fetch('data/packages.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    PACKAGES = data.packages || [];
+
+    // Build the region filter from the data instead of hard-coding it.
+    const regions = [...new Map(PACKAGES.map(p => [p.code, p.region]))];
+    $('#filter-region').innerHTML = '<option value="all">All Regions</option>' +
+      regions.map(([code, name]) => `<option value="${esc(code)}">${esc(name)}</option>`).join('');
+
+    const lens = [...new Set(PACKAGES.map(p => p.nights))].sort((a, b) => a - b);
+    $('#filter-nights').innerHTML = '<option value="all">Any trip length</option>' +
+      lens.map(n => `<option value="${esc(n)}">${esc(n)} nights</option>`).join('');
+
+    const when = data.generated ? new Date(data.generated).toLocaleString() : 'never';
+    $('#last-updated').textContent = `Tracking 5-7 night all-inclusive packages out of DSM. Last updated: ${when}`;
+  } catch (e) {
+    $('#last-updated').textContent = 'Could not load deal data.';
+    console.error(e);
+  }
+  render();
+}
+
+$('#sort').onchange = render;
+$('#filter-region').onchange = render;
+$('#filter-nights').onchange = render;
+init();
+</script>
+</body>
+</html>
