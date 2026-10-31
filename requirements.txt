@@ -1,3 +1,1 @@
-requests
-beautifulsoup4
-tomli
+beautifulsoup4>=4.12
