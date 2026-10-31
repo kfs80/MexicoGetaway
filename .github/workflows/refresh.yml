@@ -45,7 +45,6 @@ jobs:
           ZENROWS_API_KEY: ${{ secrets.ZENROWS_API_KEY }}
         run: python src/package_scraper.py
 
-      # If the parser finds zero cards, the raw HTML is saved so you can fix the selectors.
       - name: Upload scraper debug samples
         if: ${{ always() && hashFiles('debug/**') != '' }}
         uses: actions/upload-artifact@v4
@@ -60,7 +59,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data/packages.json
+          git add site/data/packages.json site/data/history.json
           if git diff --cached --quiet; then
             echo "No data changes."
           else
