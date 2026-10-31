@@ -1,0 +1,36 @@
+name: Scrape Resort Deals
+on:
+  schedule:
+    - cron: '0 13,21 * * *'  # 8 AM and 4 PM Central Time
+  workflow_dispatch:
+
+concurrency:
+  group: scraper
+  cancel-in-progress: false
+
+jobs:
+  scrape_and_publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - run: pip install -r requirements.txt
+      
+      - name: Run Package Scraper
+        env:
+          ZENROWS_API_KEY: ${{ secrets.ZENROWS_API_KEY }}
+        run: python src/package_scraper.py
+        
+      - name: Commit and Push (Safe Rebase)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ || echo "No data folder yet"
+          git commit -m "Update resort deals via ZenRows" || echo "No changes to commit"
+          git pull --rebase origin main || echo "Nothing to pull"
+          git push

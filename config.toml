@@ -1,0 +1,39 @@
+# =====================================================================
+#  Mexico Resort Package Finder - settings (v3 - ZenRows + Flexible Dates)
+# =====================================================================
+
+origins = ["DSM"]
+
+[trip]
+lookahead_days    = 210            # 7-month outlook
+min_nights        = 5              # 5 to 7 nights (6-8 calendar days)
+max_nights        = 7
+# Any day of the week is fair game now for maximum savings
+depart_weekdays   = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] 
+
+[party]
+adults            = 2              # Pricing reflects total package for the entire party
+children          = 0
+
+[schedule]
+# TIER 1: Wide Sweep (Vetting)
+wide_sweep_days = 7                # Rebuild the 4-star property whitelist every 7 days
+# TIER 2: Frequent Checks (Pricing)
+pricing_refresh_hours = 12         # Refresh prices for whitelisted properties only
+request_budget_per_run = 50        # Hard stop if we hit this many HTTP requests in a single run
+
+[resort_filters]
+min_star_rating       = 4.0        
+min_user_rating       = 8.0        # Normalized to a 10-point scale
+require_all_inclusive = true       
+must_have_beachfront  = true       
+adults_only           = false      
+
+[providers]
+active = ["cheapcaribbean", "expedia"]  
+pause_seconds = 3.0
+
+[proxy]
+# Routes requests through ZenRows to bypass Cloudflare/403 blocks
+enable = true
+provider = "zenrows"
