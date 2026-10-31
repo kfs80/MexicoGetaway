@@ -1,163 +1,297 @@
 """
-VERSION: v4 - Full CheapCaribbean HTML Parser via ZenRows
+VERSION: v5 - CheapCaribbean parser via ZenRows, rotating coverage, merged results.
+
+Run from the repo root:  python src/package_scraper.py
+Writes:                  site/data/packages.json   (deployed with the site)
+Debug HTML samples:      debug/                    (uploaded as a workflow artifact)
 """
-import os
+import csv
 import json
+import os
+import re
+import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
+
 from bs4 import BeautifulSoup
-import tomli
+
+try:
+    import tomllib  # Python 3.11+
+except ImportError:  # pragma: no cover
+    import tomli as tomllib
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT_PATH = os.path.join(ROOT_DIR, "site", "data", "packages.json")
+DEBUG_DIR = os.path.join(ROOT_DIR, "debug")
+BASE_URL = "https://www.cheapcaribbean.com/"
+PRICE_RE = re.compile(r"\$\s*([\d,]+(?:\.\d{1,2})?)")
+MIN_PLAUSIBLE_PP = 200  # ignore "$50 deposit"-style numbers
 
+
+# ---------------------------------------------------------------- config / io
 def load_config():
     with open(os.path.join(ROOT_DIR, "config.toml"), "rb") as f:
-        return tomli.load(f)
+        return tomllib.load(f)
 
-def fetch_html(target_url, config):
-    """Fetches HTML, routing through ZenRows."""
-    api_key = os.environ.get("ZENROWS_API_KEY")
-    if not api_key:
-        raise ValueError("ZENROWS_API_KEY secret is missing.")
-        
-    url = (f"https://api.zenrows.com/v1/?apikey={api_key}"
-           f"&url={urllib.parse.quote(target_url)}"
-           f"&js_render=true&antibot=true&wait_for=.hotel-card")
-           
-    print(f"Routing request through ZenRows for: {target_url[:50]}...")
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
+
+def load_destinations():
+    with open(os.path.join(ROOT_DIR, "destinations.csv"), newline="", encoding="utf-8") as f:
+        return {row["code"].strip(): row["region"].strip() for row in csv.DictReader(f)}
+
+
+def load_previous():
     try:
-        resp = urllib.request.urlopen(req, timeout=60)
-        return resp.read().decode('utf-8')
-    except Exception as e:
-        print(f"Failed to fetch {target_url}: {e}")
-        return None
+        with open(OUT_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("packages", []), int(data.get("cursor", 0))
+    except (FileNotFoundError, json.JSONDecodeError, ValueError):
+        return [], 0
 
-def parse_cheapcaribbean(html, region_code, depart_date, return_date, days):
-    """Extracts resort packages from CheapCaribbean HTML."""
-    soup = BeautifulSoup(html, 'html.parser')
+
+def save_output(payload):
+    os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+    tmp = OUT_PATH + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+    os.replace(tmp, OUT_PATH)  # atomic: never leaves a half-written file
+
+
+# -------------------------------------------------------------------- fetching
+def fetch_html(target_url, config):
+    """Fetch a page, through ZenRows when [proxy].enable is true. Returns text or None."""
+    proxy = config.get("proxy", {})
+    if proxy.get("enable", True):
+        api_key = os.environ.get("ZENROWS_API_KEY")
+        if not api_key:
+            raise SystemExit("ZENROWS_API_KEY secret is missing.")
+        params = {
+            "apikey": api_key,
+            "url": target_url,
+            "js_render": "true",
+            "antibot": "true",
+        }
+        if proxy.get("wait_for"):
+            params["wait_for"] = proxy["wait_for"]
+        if proxy.get("premium_proxy"):
+            params["premium_proxy"] = "true"
+        if proxy.get("country"):
+            params["proxy_country"] = proxy["country"]
+        url = "https://api.zenrows.com/v1/?" + urllib.parse.urlencode(params)
+    else:
+        url = target_url
+
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
+    try:
+        with urllib.request.urlopen(req, timeout=90) as resp:
+            return resp.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as e:
+        # Never print the exception text/URL: the URL contains the API key.
+        print(f"  fetch failed: HTTP {e.code}")
+    except Exception as e:
+        print(f"  fetch failed: {type(e).__name__}")
+    return None
+
+
+# --------------------------------------------------------------------- parsing
+def extract_price_pp(card):
+    """Lowest plausible $ amount in a price-ish element (skips struck-through 'was' prices)."""
+    found = []
+    for el in card.find_all(class_=lambda c: c and "price" in c.lower()):
+        for m in PRICE_RE.finditer(el.get_text(" ", strip=True)):
+            val = float(m.group(1).replace(",", ""))
+            if val >= MIN_PLAUSIBLE_PP:
+                found.append(val)
+    if not found:
+        for m in PRICE_RE.finditer(card.get_text(" ", strip=True)):
+            val = float(m.group(1).replace(",", ""))
+            if val >= MIN_PLAUSIBLE_PP:
+                found.append(val)
+    return int(min(found)) if found else None
+
+
+def extract_stars(card):
+    for el in card.find_all(attrs={"data-rating": True}):
+        try:
+            val = float(el["data-rating"])
+            if 0 < val <= 5:
+                return val
+        except ValueError:
+            pass
+    m = re.search(r"(\d(?:\.\d)?)\s*[- ]?star", card.get_text(" ", strip=True), re.I)
+    if m and 0 < float(m.group(1)) <= 5:
+        return float(m.group(1))
+    return None  # unknown, NOT a guessed 4.0
+
+
+def parse_cheapcaribbean(html, code, region, dep, ret, nights, config, target_url):
+    soup = BeautifulSoup(html, "html.parser")
+    cards = soup.find_all("div", class_=lambda c: c and "hotel-card" in c.lower())
+    filters = config.get("resort_filters", {})
+    adults = config["party"]["adults"]
+    today = datetime.now(timezone.utc).date().isoformat()
     packages = []
-    
-    # CheapCaribbean uses div classes like 'hotel-card' or 'package-result'
-    cards = soup.find_all('div', class_=lambda c: c and 'hotel-card' in c.lower())
-    
+
     for card in cards:
         try:
-            # Resort Name
-            name_el = card.find(['h3', 'h4'])
-            if not name_el: continue
-            resort_name = name_el.get_text(strip=True)
-            
-            # Price (Usually wrapped in a strong or span with 'price' class)
-            price_el = card.find(string=lambda text: text and '$' in text)
-            if not price_el: continue
-            price_str = price_el.strip().replace('$', '').replace(',', '')
-            price_pp = int(float(price_str))
-            
-            # Star Rating (Often indicated by a data attribute or number of full-star icons)
-            stars = 4.0 # Default fallback if we can't parse exactly
-            star_el = card.find(class_=lambda c: c and 'star' in c.lower())
-            if star_el and 'data-rating' in star_el.attrs:
-                stars = float(star_el['data-rating'])
-            
-            # Build the package object
-            pkg = {
-                "resort": resort_name,
-                "region": "Cancun/Riviera Maya" if region_code == "CUN" else "Puerto Vallarta",
-                "code": region_code,
-                "stars": stars,
-                "user_rating": 8.5, # OTA user ratings often require a secondary API call, mocking for v1
-                "amenities": ["All-Inclusive"],
-                "depart_date": depart_date.strftime("%Y-%m-%d"),
-                "return_date": return_date.strftime("%Y-%m-%d"),
-                "days": days,
-                "airline": "Legacy Carrier", # Actual airline often hidden behind a click
-                "price_total": price_pp * 2, # CheapCaribbean shows PP, we need total for 2 adults
+            name_el = card.find(["h2", "h3", "h4"])
+            if not name_el:
+                continue
+            price_pp = extract_price_pp(card)
+            if price_pp is None:
+                continue
+            stars = extract_stars(card)
+            text = card.get_text(" ", strip=True).lower()
+            amenities = []
+            if re.search(r"all[\s-]*inclusive", text):
+                amenities.append("All-Inclusive")
+            if re.search(r"beach[\s-]*front", text):
+                amenities.append("Beachfront")
+            if re.search(r"adults?[\s-]*only", text):
+                amenities.append("Adults Only")
+
+            if stars is not None and stars < filters.get("min_star_rating", 0):
+                continue
+            if filters.get("require_all_inclusive") and "All-Inclusive" not in amenities:
+                continue
+            if filters.get("adults_only") and "Adults Only" not in amenities:
+                continue
+
+            link = card.find("a", href=True)
+            url = urllib.parse.urljoin(BASE_URL, link["href"]) if link else target_url
+
+            packages.append({
+                "resort": name_el.get_text(strip=True),
+                "region": region,
+                "code": code,
+                "stars": stars,              # None = could not be parsed
+                "user_rating": None,         # not on search cards; needs a detail-page lookup
+                "amenities": amenities,
+                "depart_date": dep.isoformat(),
+                "return_date": ret.isoformat(),
+                "nights": nights,
+                "airline": None,             # usually hidden behind a click
+                "price_pp": price_pp,        # assumes the card shows a per-person price
+                "price_total": price_pp * adults,
                 "provider": "CheapCaribbean",
-                "url": "https://www.cheapcaribbean.com/"
-            }
-            
-            # Apply our 4-star minimum filter
-            if pkg['stars'] >= 4.0:
-                packages.append(pkg)
-                
+                "url": url,
+                "last_seen": today,
+            })
         except Exception as e:
-            print(f"Error parsing a card: {e}")
-            continue
-            
-    return packages
+            print(f"  skipped a card: {type(e).__name__}")
+    return packages, len(cards)
 
-def generate_search_dates(config):
-    """Yields valid (depart, return, days) combinations."""
-    today = datetime.now(timezone.utc)
-    start = today + timedelta(days=21) # Start looking 3 weeks out
+
+# ------------------------------------------------------------------ candidates
+def build_candidates(config, codes):
+    """All (code, depart, return, nights), ordered by date with destinations interleaved."""
+    today = datetime.now(timezone.utc).date()
+    start = today + timedelta(days=config["trip"].get("min_lead_days", 21))
     end = today + timedelta(days=config["trip"]["lookahead_days"])
-    
-    valid_depart = [d[:3] for d in config["trip"]["depart_weekdays"]]
-    
-    current = start
-    while current <= end:
-        if current.strftime("%a") in valid_depart:
+    weekdays = {d[:3] for d in config["trip"]["depart_weekdays"]}
+    out = []
+    cur = start
+    while cur <= end:
+        if cur.strftime("%a") in weekdays:
             for nights in range(config["trip"]["min_nights"], config["trip"]["max_nights"] + 1):
-                ret = current + timedelta(days=nights)
-                yield (current, ret, nights)
-        current += timedelta(days=1)
+                for code in codes:
+                    out.append((code, cur, cur + timedelta(days=nights), nights))
+        cur += timedelta(days=1)
+    return out
 
-def build_search_url(origin, dest, dep_str, ret_str, adults):
-    """Constructs the OTA search URL."""
-    # Example CheapCaribbean structure (varies by OTA and often requires reverse-engineering their search endpoint)
-    return f"https://www.cheapcaribbean.com/search?origin={origin}&dest={dest}&dep={dep_str}&ret={ret_str}&adults={adults}"
+
+def build_search_url(origin, dest, dep, ret, adults):
+    # UNVERIFIED: this URL shape is a placeholder. Open CheapCaribbean in a browser, run a
+    # real search, and copy the actual URL/query format from the address bar or network tab.
+    return (f"{BASE_URL}search?origin={origin}&dest={dest}"
+            f"&dep={dep.isoformat()}&ret={ret.isoformat()}&adults={adults}")
+
+
+# ------------------------------------------------------------------ merge/trim
+def trim(pkgs, per_resort, cap):
+    pkgs = sorted(pkgs, key=lambda p: p["price_total"])
+    counts, out = {}, []
+    for p in pkgs:
+        k = (p["code"], p["resort"])
+        if counts.get(k, 0) >= per_resort:
+            continue
+        counts[k] = counts.get(k, 0) + 1
+        out.append(p)
+    return out[:cap]
+
 
 def main():
-    print("Starting Mexico Resort Tracker (v4 - Full Parser)...")
+    print("Starting Mexico Resort Tracker (v5)...")
     config = load_config()
-    all_packages = []
-    requests_made = 0
-    max_requests = config["schedule"]["request_budget_per_run"]
-    
-    # We will search CUN and PVR
-    destinations = ["CUN", "PVR"]
-    
-    for dest in destinations:
-        for dep, ret, nights in generate_search_dates(config):
-            if requests_made >= max_requests:
-                print("Hit request budget cap. Stopping.")
-                break
-                
-            dep_str = dep.strftime("%Y-%m-%d")
-            ret_str = ret.strftime("%Y-%m-%d")
-            
-            target_url = build_search_url(config["origins"][0], dest, dep_str, ret_str, config["party"]["adults"])
-            print(f"Searching {dest} for {dep_str} ({nights} nights)...")
-            
-            html = fetch_html(target_url, config)
-            requests_made += 1
-            
-            if html:
-                pkgs = parse_cheapcaribbean(html, dest, dep, ret, nights)
-                all_packages.extend(pkgs)
-                print(f"  -> Found {len(pkgs)} 4-star+ packages.")
-            
-        if requests_made >= max_requests:
+    dests = load_destinations()
+    sched = config["schedule"]
+    budget = sched["request_budget_per_run"]
+    deadline = time.monotonic() + sched.get("run_time_limit_minutes", 25) * 60
+    pause = config.get("providers", {}).get("pause_seconds", 3.0)
+    origin = config["origins"][0]
+    adults = config["party"]["adults"]
+
+    cands = build_candidates(config, list(dests))
+    if not cands:
+        raise SystemExit("No candidate search dates; check [trip] in config.toml.")
+
+    prev, cursor = load_previous()
+    today = datetime.now(timezone.utc).date()
+    stale = sched.get("stale_after_days", 14)
+    prev = [p for p in prev
+            if p["depart_date"] >= today.isoformat()
+            and (today - date.fromisoformat(p.get("last_seen", today.isoformat()))).days <= stale]
+
+    start = cursor % len(cands)
+    batch = [cands[(start + i) % len(cands)] for i in range(min(budget, len(cands)))]
+    print(f"{len(cands)} candidate searches; running {len(batch)} starting at #{start}.")
+
+    searched, new_pkgs = set(), []
+    attempted = ok = zero_card_samples = 0
+    for code, dep, ret, nights in batch:
+        if time.monotonic() > deadline:
+            print("Run time limit reached. Stopping.")
             break
-            
-    # Sort and take top 50 best deals to keep JSON small
-    all_packages.sort(key=lambda x: x['price_total'])
-    best_deals = all_packages[:50]
-    
-    final_data = {
+        target = build_search_url(origin, code, dep, ret, adults)
+        print(f"Searching {code} {dep} ({nights} nights)...")
+        html = fetch_html(target, config)
+        attempted += 1
+        if html:
+            ok += 1
+            pkgs, n_cards = parse_cheapcaribbean(html, code, dests[code], dep, ret, nights, config, target)
+            searched.add((code, dep.isoformat(), ret.isoformat()))
+            new_pkgs.extend(pkgs)
+            print(f"  -> {n_cards} cards, {len(pkgs)} kept.")
+            if n_cards == 0 and zero_card_samples < 2:
+                os.makedirs(DEBUG_DIR, exist_ok=True)
+                with open(os.path.join(DEBUG_DIR, f"zero_cards_{code}_{dep}.html"), "w", encoding="utf-8") as f:
+                    f.write(html)
+                zero_card_samples += 1
+        time.sleep(pause)
+
+    if attempted and ok == 0:
+        # Keep the previous good data instead of overwriting it with nothing.
+        raise SystemExit("Every request failed. Leaving packages.json untouched.")
+
+    # Replace old results for the exact searches we just redid, keep everything else.
+    kept = [p for p in prev if (p["code"], p["depart_date"], p["return_date"]) not in searched]
+    merged = {}
+    for p in kept + new_pkgs:
+        key = (p["code"], p["resort"], p["depart_date"], p["return_date"], p["provider"])
+        if key not in merged or p["price_total"] < merged[key]["price_total"]:
+            merged[key] = p
+    final = trim(list(merged.values()), config["output"]["max_per_resort"], config["output"]["max_packages"])
+
+    save_output({
         "generated": datetime.now(timezone.utc).isoformat(),
-        "packages": best_deals
-    }
-    
-    # Save to data/packages.json
-    os.makedirs(os.path.join(ROOT_DIR, "data"), exist_ok=True)
-    out_path = os.path.join(ROOT_DIR, "data", "packages.json")
-    with open(out_path, "w") as f:
-        json.dump(final_data, f, indent=2)
-        
-    print(f"\nScraping complete! Saved {len(best_deals)} packages to {out_path}.")
+        "cursor": (start + attempted) % len(cands),
+        "stats": {"requests": attempted, "ok": ok, "new_packages": len(new_pkgs)},
+        "packages": final,
+    })
+    print(f"Done. {attempted} requests ({ok} ok), {len(final)} packages saved to {OUT_PATH}.")
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
