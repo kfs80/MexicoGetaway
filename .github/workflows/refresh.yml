@@ -1,36 +1,58 @@
-name: Scrape Resort Deals
+name: Scrape and Deploy Resort Deals
 on:
   schedule:
     - cron: '0 13,21 * * *'  # 8 AM and 4 PM Central Time
   workflow_dispatch:
+    inputs:
+      build_only:
+        description: "Run in build-only mode (skip scraping)"
+        type: boolean
+        default: false
 
 concurrency:
-  group: scraper
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
-  scrape_and_publish:
+  scrape_and_deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
+          
       - run: pip install -r requirements.txt
       
       - name: Run Package Scraper
+        if: ${{ !inputs.build_only }}
         env:
           ZENROWS_API_KEY: ${{ secrets.ZENROWS_API_KEY }}
         run: python src/package_scraper.py
         
-      - name: Commit and Push (Safe Rebase)
+      - name: Build Static Site
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ || echo "No data folder yet"
-          git commit -m "Update resort deals via ZenRows" || echo "No changes to commit"
-          git pull --rebase origin main || echo "Nothing to pull"
-          git push
+          # If you have a build script or if package_scraper handles grid embedding, run it here.
+          # For now, ensure site/index.html reads data/packages.json correctly.
+          echo "Building site..."
+          
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './site'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
