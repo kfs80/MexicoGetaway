@@ -1,39 +1,52 @@
 # =====================================================================
-#  Mexico Resort Package Finder - settings (v3 - ZenRows + Flexible Dates)
+#  Mexico Resort Package Finder - settings (v5)
 # =====================================================================
 
 origins = ["DSM"]
 
 [trip]
 lookahead_days    = 210            # 7-month outlook
-min_nights        = 5              # 5 to 7 nights (6-8 calendar days)
+min_lead_days     = 21             # don't search trips departing sooner than this
+min_nights        = 5              # 5 to 7 nights
 max_nights        = 7
-# Any day of the week is fair game now for maximum savings
-depart_weekdays   = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] 
+# Fewer weekdays = a full sweep of the calendar finishes sooner (fresher prices).
+depart_weekdays   = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 [party]
-adults            = 2              # Pricing reflects total package for the entire party
+adults            = 2              # price_total = per-person price x adults
 children          = 0
 
 [schedule]
-# TIER 1: Wide Sweep (Vetting)
-wide_sweep_days = 7                # Rebuild the 4-star property whitelist every 7 days
-# TIER 2: Frequent Checks (Pricing)
-pricing_refresh_hours = 12         # Refresh prices for whitelisted properties only
-request_budget_per_run = 50        # Hard stop if we hit this many HTTP requests in a single run
+request_budget_per_run = 50        # hard cap on ZenRows requests per run. Each run searches the
+                                   # NEXT 50 date/destination combos (rotating cursor), so the
+                                   # whole calendar is covered over several runs.
+run_time_limit_minutes = 25        # stop scraping gracefully after this long
+stale_after_days       = 14        # drop a deal if it hasn't been re-seen in this many days
+# NOTE: the old wide_sweep_days / pricing_refresh_hours whitelist tiers were never
+# implemented by the scraper, so they have been removed to avoid confusion.
+
+[output]
+max_packages      = 300            # total deals kept in site/data/packages.json
+max_per_resort    = 3              # cheapest N date options kept per resort
 
 [resort_filters]
-min_star_rating       = 4.0        
-min_user_rating       = 8.0        # Normalized to a 10-point scale
-require_all_inclusive = true       
-must_have_beachfront  = true       
-adults_only           = false      
+min_star_rating       = 4.0        # enforced when the star rating can be parsed
+min_user_rating       = 8.0        # enforced only when a user rating is parsed (10-pt scale)
+require_all_inclusive = true       # enforced: card text must say "all inclusive"
+must_have_beachfront  = false      # NOT enforceable from search cards; needs a vetted resort
+                                   # whitelist. Left off so it doesn't silently drop everything.
+adults_only           = false      # not enforced yet
 
 [providers]
-active = ["cheapcaribbean", "expedia"]  
+active = ["cheapcaribbean"]        # expedia has no parser yet
 pause_seconds = 3.0
 
 [proxy]
-# Routes requests through ZenRows to bypass Cloudflare/403 blocks
-enable = true
-provider = "zenrows"
+# Routes requests through ZenRows to get past Cloudflare/403 blocks.
+# js_render + antibot (+ premium proxy) can cost ~25x a basic request, so watch your credits:
+# 50 requests x 2 runs/day can add up fast.
+enable        = true
+provider      = "zenrows"
+premium_proxy = true
+country       = "us"
+wait_for      = ".hotel-card"      # CSS selector ZenRows waits for. Must match the real page.
