@@ -1,13 +1,21 @@
 name: Scrape and Deploy Resort Deals
+
 on:
   schedule:
-    - cron: '0 13,21 * * *'  # 8 AM and 4 PM Central Time
+    # GitHub cron is UTC. 13:00/21:00 UTC = 8 AM/4 PM CDT, but 7 AM/3 PM CST
+    # after daylight saving ends (Nov 1, 2026). Adjust if you care.
+    - cron: '0 13,21 * * *'
   workflow_dispatch:
     inputs:
       build_only:
-        description: "Run in build-only mode (skip scraping)"
+        description: "Build-only mode (skip scraping, redeploy current data)"
         type: boolean
         default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: "pages"
@@ -16,43 +24,58 @@ concurrency:
 jobs:
   scrape_and_deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
+    timeout-minutes: 40
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
-          
+
       - run: pip install -r requirements.txt
-      
+
       - name: Run Package Scraper
         if: ${{ !inputs.build_only }}
         env:
           ZENROWS_API_KEY: ${{ secrets.ZENROWS_API_KEY }}
         run: python src/package_scraper.py
-        
-      - name: Build Static Site
+
+      # If the parser finds zero cards, the raw HTML is saved so you can fix the selectors.
+      - name: Upload scraper debug samples
+        if: ${{ always() && hashFiles('debug/**') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-debug
+          path: debug/
+          retention-days: 7
+
+      # Commits made with GITHUB_TOKEN do not trigger deploy.yml, so no double deploy.
+      - name: Commit updated data
+        if: ${{ !inputs.build_only }}
         run: |
-          # If you have a build script or if package_scraper handles grid embedding, run it here.
-          # For now, ensure site/index.html reads data/packages.json correctly.
-          echo "Building site..."
-          
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/packages.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Update package data"
+            git push
+          fi
+
       - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
+        uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './site'
-          
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
