@@ -16,6 +16,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: "pages"
@@ -43,7 +44,30 @@ jobs:
         if: ${{ !inputs.build_only }}
         env:
           ZENROWS_API_KEY: ${{ secrets.ZENROWS_API_KEY }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
         run: python src/package_scraper.py
+
+      # A GitHub issue assigned to and mentioning you: GitHub emails you and pushes to the mobile app.
+      # This runs BEFORE the data commit, so if it fails the alert is retried on the next run.
+      - name: Send deal alert (GitHub issue)
+        if: ${{ !inputs.build_only && hashFiles('alerts_out/alert.md') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          { echo "@$OWNER"; echo; cat alerts_out/alert.md; echo; echo "Full list: https://$OWNER.github.io/${GITHUB_REPOSITORY#*/}/"; } > alerts_out/body.md
+          gh issue create --title "$(cat alerts_out/title.txt)" --body-file alerts_out/body.md --assignee "$OWNER"
+
+      # Optional phone push through ntfy.sh: install the ntfy app, subscribe to a hard-to-guess topic,
+      # and put the same topic in a repo secret named NTFY_TOPIC.
+      - name: Send deal alert (ntfy push)
+        if: ${{ !inputs.build_only && hashFiles('alerts_out/ntfy.txt') != '' }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          if [ -n "$NTFY_TOPIC" ]; then
+            curl -s -H "Title: $(cat alerts_out/title.txt)" -d @alerts_out/ntfy.txt "https://ntfy.sh/$NTFY_TOPIC" > /dev/null
+          fi
 
       - name: Upload scraper debug samples
         if: ${{ always() && hashFiles('debug/**') != '' }}
@@ -59,7 +83,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data/packages.json site/data/history.json
+          git add -A site/data
           if git diff --cached --quiet; then
             echo "No data changes."
           else
