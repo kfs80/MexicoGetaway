@@ -42,6 +42,18 @@
   .price-sub { font-size:11px; color:var(--mute); font-weight:400; }
   .provider { font-size:12px; font-weight:600; color:var(--accent); }
   .flt { color:var(--accent); font-weight:600; cursor:pointer; }
+  .bad { color:#dc2626; font-weight:600; }
+  dialog { border:1px solid var(--line); border-radius:12px; background:var(--card); color:var(--ink); padding:16px; width:min(480px, 94vw); }
+  dialog::backdrop { background:rgba(0,0,0,.5); }
+  .calhead { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:10px; }
+  .calhead button { font:inherit; border:1px solid var(--line); background:transparent; color:var(--ink); border-radius:6px; padding:4px 10px; cursor:pointer; }
+  .dow, .calgrid { display:grid; grid-template-columns:repeat(7, 1fr); gap:4px; }
+  .dow { font-size:11px; color:var(--mute); text-align:center; margin-bottom:4px; }
+  .cell { font:inherit; font-size:11px; padding:6px 2px; border:1px solid var(--line); background:var(--bg); color:var(--ink); border-radius:6px; cursor:pointer; line-height:1.2; }
+  .cell b { display:block; font-size:12px; }
+  .cell.min { border-color:var(--good); box-shadow:inset 0 0 0 1px var(--good); }
+  .cell.sel { background:var(--ink); color:var(--bg); }
+  .cell:disabled { opacity:.3; cursor:default; }
   .empty { padding:20px; color:var(--mute); grid-column:1/-1; }
   .foot { padding:0 20px 20px; }
 </style>
@@ -70,12 +82,19 @@
 </div>
 
 <div class="grid" id="grid"></div>
+<dialog id="cal">
+  <div class="calhead"><div><strong id="cal-title"></strong><div class="sub" id="cal-sub"></div></div><button id="cal-close" aria-label="Close">✕</button></div>
+  <div class="dow"><div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div></div>
+  <div class="calgrid" id="cal-grid"></div>
+  <div class="sub" id="cal-pick" style="margin-top:12px"></div>
+</dialog>
 <div class="foot sub" id="foot"></div>
 
 <script>
 const $ = s => document.querySelector(s);
 let PACKAGES = [];
 let MONTH = null;
+let SHOWN = [];
 
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : '#';
@@ -123,6 +142,7 @@ function render() {
   const seen = new Set(), top = [];
   for (const p of pkgs) { if (!seen.has(p.hotel_code)) { seen.add(p.hotel_code); top.push(p); } }
   const shown = top.slice(0, topn);
+  SHOWN = shown;
 
   $('#foot').textContent = MONTH ? `${monthName(MONTH)}: showing ${shown.length} of ${top.length} resorts. Each resort appears once, with its cheapest matching date.` : '';
   if (!shown.length) {
@@ -132,19 +152,26 @@ function render() {
   $('#grid').innerHTML = shown.map((p, i) => {
     const extras = (p.amenities || []).join(' · ');
     const disc = (p.pct_below ?? 0) >= 5 ? `<div class="good">${esc(p.pct_below)}% below this resort's typical ${esc(p.nights)}-night price</div>` : '';
-    const low = (p.hist_days ?? 0) >= 7 && p.hist_min != null ? `<div>Lowest seen in ${esc(p.hist_days)} days: ${money(p.hist_min)}</div>` : '';
+    const atLow = (p.hist_days ?? 0) >= 14 && p.hist_min != null && p.price_total <= p.hist_min;
+    const low = atLow ? `<div class="good">★ Lowest price we've seen (${esc(p.hist_days)} days)</div>`
+      : ((p.hist_days ?? 0) >= 7 && p.hist_min != null ? `<div>Lowest seen in ${esc(p.hist_days)} days: ${money(p.hist_min)}</div>` : '');
+    const chg = (p.chg_7d != null && Math.abs(p.chg_7d) >= 10)
+      ? `<div class="${p.chg_7d < 0 ? 'good' : 'bad'}">${p.chg_7d < 0 ? '▼' : '▲'} ${money(Math.abs(p.chg_7d))} vs. a week ago</div>` : '';
+    const rate = p.user_rating != null ? `<span class="meta">${esc(p.user_rating)}/10 · ${esc(p.rating_count)} reviews</span>` : '';
+    const calLink = p.cal ? `<div><span class="flt" data-cal="${i}">📅 See every date in ${esc(monthName(p.month))}</span></div>` : '';
     return `
       <a href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener noreferrer" class="card">
         <div class="rank">${i + 1}</div>
         <div class="card-body">
           <div class="region">${esc(p.region)}</div>
           <h2 class="resort">${esc(p.resort)}</h2>
-          <div class="stars">${renderStars(p.stars)}<span class="meta">${esc(extras)}</span></div>
+          <div class="stars">${renderStars(p.stars)}<span class="meta">${esc(extras)}</span>${rate}</div>
           <div class="details">
             <div>📅 ${esc(fmtDay(p.depart_date))} → ${esc(fmtDay(p.return_date))} · ${esc(p.nights)} nights</div>
             <div>💲 ${money(ppn(p))} per night for two</div>
             <div><span class="flt" data-flights="${esc(flightsUrl(p))}">✈ Check flights (stops, layover, travel time) ↗</span></div>
-            ${disc}${low}
+            ${calLink}
+            ${chg}${disc}${low}
           </div>
         </div>
         <div class="card-footer">
@@ -178,9 +205,45 @@ async function init() {
   render();
 }
 
+const pad = n => String(n).padStart(2, '0');
+const addDays = (s, n) => { const d = parseDay(s); d.setDate(d.getDate() + n); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; };
+const bookUrl = (p, dep) => 'https://beachfinder.cheapcaribbean.com/destination-less/results?' + new URLSearchParams(
+  { st:'destination-less', o:'DSM', n:p.nights, sd:dep, ed:dep, d:p.code, isDateRange:'true' });
+
+function openCalendar(p) {
+  const [y, m] = p.month.split('-').map(Number);
+  const first = new Date(y, m - 1, 1).getDay(), days = new Date(y, m, 0).getDate();
+  const vals = p.cal.filter(v => v != null), min = Math.min(...vals);
+  $('#cal-title').textContent = `${p.resort}`;
+  $('#cal-sub').textContent = `${monthName(p.month)} · ${p.nights} nights · total for 2 adults`;
+  let html = '<div></div>'.repeat(first);
+  for (let d = 1; d <= days; d++) {
+    const v = p.cal[d - 1];
+    html += v == null ? `<button class="cell" disabled>${d}</button>`
+      : `<button class="cell ${v === min ? 'min' : ''}" data-day="${d}"><span>${d}</span><b>${money(v)}</b></button>`;
+  }
+  $('#cal-grid').innerHTML = html;
+  $('#cal-pick').textContent = 'Green outline = cheapest date. Tap a date for links.';
+  $('#cal-grid').onclick = e => {
+    const c = e.target.closest('[data-day]'); if (!c) return;
+    document.querySelectorAll('#cal-grid .sel').forEach(x => x.classList.remove('sel'));
+    c.classList.add('sel');
+    const dep = `${p.month}-${pad(c.dataset.day)}`, ret = addDays(dep, p.nights);
+    const pick = $('#cal-pick');
+    pick.innerHTML = `${esc(fmtDay(dep))} → ${esc(fmtDay(ret))}: <b>${money(p.cal[c.dataset.day - 1])}</b><br>` +
+      `<a href="${esc(bookUrl(p, dep))}" target="_blank" rel="noopener noreferrer">Open on CheapCaribbean ↗</a> · ` +
+      `<a href="${esc(flightsUrl({ code:p.code, depart_date:dep, return_date:ret }))}" target="_blank" rel="noopener noreferrer">Check flights ↗</a>`;
+  };
+  $('#cal').showModal();
+}
+$('#cal-close').onclick = () => $('#cal').close();
+$('#cal').addEventListener('click', e => { if (e.target.id === 'cal') $('#cal').close(); });
+
 $('#grid').addEventListener('click', e => {
   const f = e.target.closest('[data-flights]');
-  if (f) { e.preventDefault(); window.open(f.dataset.flights, '_blank', 'noopener'); }
+  if (f) { e.preventDefault(); window.open(f.dataset.flights, '_blank', 'noopener'); return; }
+  const c = e.target.closest('[data-cal]');
+  if (c) { e.preventDefault(); openCalendar(SHOWN[+c.dataset.cal]); }
 });
 
 ['#sort', '#filter-region', '#filter-nights', '#topn'].forEach(s => $(s).onchange = render);
