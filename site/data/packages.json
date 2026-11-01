@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-01T00:00:11.358509+00:00",
+ "generated": "2026-11-01T03:58:39.484396+00:00",
  "stats": {
   "night_lengths_ok": 3,
-  "qualifying_prices": 60164
+  "qualifying_prices": 60649
  },
  "packages": [
   {
@@ -21,12 +21,12 @@
    "airline": null,
    "price_pp": 950,
    "price_total": 1900,
-   "typical_total": 2431,
+   "typical_total": 2437,
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 1900
   },
   {
@@ -45,12 +45,12 @@
    "airline": null,
    "price_pp": 950,
    "price_total": 1900,
-   "typical_total": 2431,
+   "typical_total": 2437,
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 1900
   },
   {
@@ -69,12 +69,12 @@
    "airline": null,
    "price_pp": 1008,
    "price_total": 2017,
-   "typical_total": 2403,
+   "typical_total": 2398,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2017
   },
   {
@@ -93,12 +93,12 @@
    "airline": null,
    "price_pp": 1008,
    "price_total": 2017,
-   "typical_total": 2403,
+   "typical_total": 2398,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2017
   },
   {
@@ -117,12 +117,12 @@
    "airline": null,
    "price_pp": 1021,
    "price_total": 2042,
-   "typical_total": 2338,
+   "typical_total": 2347,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2042
   },
   {
@@ -141,12 +141,12 @@
    "airline": null,
    "price_pp": 1022,
    "price_total": 2043,
-   "typical_total": 2338,
+   "typical_total": 2347,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2042
   },
   {
@@ -169,8 +169,8 @@
    "pct_below": 25,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2057
   },
   {
@@ -193,8 +193,8 @@
    "pct_below": 25,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2069
   },
   {
@@ -217,8 +217,8 @@
    "pct_below": 25,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2069
   },
   {
@@ -237,12 +237,12 @@
    "airline": null,
    "price_pp": 1036,
    "price_total": 2071,
-   "typical_total": 2407,
+   "typical_total": 2406,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2071
   },
   {
@@ -261,12 +261,12 @@
    "airline": null,
    "price_pp": 1040,
    "price_total": 2079,
-   "typical_total": 2407,
+   "typical_total": 2406,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2071
   },
   {
@@ -285,12 +285,12 @@
    "airline": null,
    "price_pp": 1046,
    "price_total": 2091,
-   "typical_total": 2444,
-   "pct_below": 14,
+   "typical_total": 2447,
+   "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2091
   },
   {
@@ -309,12 +309,12 @@
    "airline": null,
    "price_pp": 1046,
    "price_total": 2091,
-   "typical_total": 2444,
-   "pct_below": 14,
+   "typical_total": 2447,
+   "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2091
   },
   {
@@ -333,12 +333,12 @@
    "airline": null,
    "price_pp": 1052,
    "price_total": 2104,
-   "typical_total": 2475,
+   "typical_total": 2471,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2104
   },
   {
@@ -361,8 +361,8 @@
    "pct_below": 23,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-26&ed=2026-11-26&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2057
   },
   {
@@ -381,12 +381,12 @@
    "airline": null,
    "price_pp": 1063,
    "price_total": 2126,
-   "typical_total": 2486,
+   "typical_total": 2482,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2126
   },
   {
@@ -405,12 +405,12 @@
    "airline": null,
    "price_pp": 1063,
    "price_total": 2127,
-   "typical_total": 2570,
+   "typical_total": 2568,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2127
   },
   {
@@ -433,8 +433,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2133
   },
   {
@@ -457,8 +457,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2133
   },
   {
@@ -477,12 +477,12 @@
    "airline": null,
    "price_pp": 1069,
    "price_total": 2137,
-   "typical_total": 2363,
+   "typical_total": 2366,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2137
   },
   {
@@ -501,12 +501,12 @@
    "airline": null,
    "price_pp": 1072,
    "price_total": 2145,
-   "typical_total": 2486,
+   "typical_total": 2482,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2126
   },
   {
@@ -525,12 +525,12 @@
    "airline": null,
    "price_pp": 1074,
    "price_total": 2147,
-   "typical_total": 2570,
+   "typical_total": 2568,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2127
   },
   {
@@ -549,12 +549,12 @@
    "airline": null,
    "price_pp": 1079,
    "price_total": 2157,
-   "typical_total": 2475,
+   "typical_total": 2471,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2104
   },
   {
@@ -573,12 +573,12 @@
    "airline": null,
    "price_pp": 1083,
    "price_total": 2165,
-   "typical_total": 2363,
+   "typical_total": 2366,
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2137
   },
   {
@@ -597,12 +597,12 @@
    "airline": null,
    "price_pp": 1084,
    "price_total": 2168,
-   "typical_total": 2517,
-   "pct_below": 14,
+   "typical_total": 2506,
+   "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2168
   },
   {
@@ -621,12 +621,12 @@
    "airline": null,
    "price_pp": 1084,
    "price_total": 2168,
-   "typical_total": 2517,
-   "pct_below": 14,
+   "typical_total": 2506,
+   "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2168
   },
   {
@@ -645,12 +645,12 @@
    "airline": null,
    "price_pp": 1086,
    "price_total": 2171,
-   "typical_total": 2668,
-   "pct_below": 19,
+   "typical_total": 2663,
+   "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2171
   },
   {
@@ -669,12 +669,12 @@
    "airline": null,
    "price_pp": 1086,
    "price_total": 2171,
-   "typical_total": 2668,
-   "pct_below": 19,
+   "typical_total": 2663,
+   "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2171
   },
   {
@@ -697,8 +697,8 @@
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2175
   },
   {
@@ -721,8 +721,8 @@
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2175
   },
   {
@@ -741,12 +741,12 @@
    "airline": null,
    "price_pp": 1092,
    "price_total": 2184,
-   "typical_total": 2416,
+   "typical_total": 2415,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2184
   },
   {
@@ -765,12 +765,12 @@
    "airline": null,
    "price_pp": 1093,
    "price_total": 2186,
-   "typical_total": 2430,
-   "pct_below": 10,
+   "typical_total": 2442,
+   "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2186
   },
   {
@@ -789,12 +789,12 @@
    "airline": null,
    "price_pp": 1093,
    "price_total": 2186,
-   "typical_total": 2430,
-   "pct_below": 10,
+   "typical_total": 2442,
+   "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2186
   },
   {
@@ -813,12 +813,12 @@
    "airline": null,
    "price_pp": 1094,
    "price_total": 2187,
-   "typical_total": 2573,
+   "typical_total": 2564,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2187
   },
   {
@@ -841,8 +841,8 @@
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2196
   },
   {
@@ -865,8 +865,8 @@
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2196
   },
   {
@@ -885,12 +885,12 @@
    "airline": null,
    "price_pp": 1098,
    "price_total": 2196,
-   "typical_total": 2616,
+   "typical_total": 2600,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2196
   },
   {
@@ -909,12 +909,12 @@
    "airline": null,
    "price_pp": 1099,
    "price_total": 2198,
-   "typical_total": 2567,
+   "typical_total": 2562,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2198
   },
   {
@@ -933,12 +933,12 @@
    "airline": null,
    "price_pp": 1099,
    "price_total": 2198,
-   "typical_total": 2567,
+   "typical_total": 2562,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2198
   },
   {
@@ -961,8 +961,8 @@
    "pct_below": 2,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2198
   },
   {
@@ -985,8 +985,8 @@
    "pct_below": 2,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2198
   },
   {
@@ -1005,12 +1005,12 @@
    "airline": null,
    "price_pp": 1100,
    "price_total": 2201,
-   "typical_total": 2573,
+   "typical_total": 2564,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2187
   },
   {
@@ -1029,12 +1029,12 @@
    "airline": null,
    "price_pp": 1105,
    "price_total": 2210,
-   "typical_total": 2955,
+   "typical_total": 2930,
    "pct_below": 25,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2210
   },
   {
@@ -1057,8 +1057,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2211
   },
   {
@@ -1077,12 +1077,12 @@
    "airline": null,
    "price_pp": 1107,
    "price_total": 2214,
-   "typical_total": 2699,
+   "typical_total": 2697,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2214
   },
   {
@@ -1101,12 +1101,12 @@
    "airline": null,
    "price_pp": 1107,
    "price_total": 2214,
-   "typical_total": 2699,
+   "typical_total": 2697,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2214
   },
   {
@@ -1125,12 +1125,12 @@
    "airline": null,
    "price_pp": 1107,
    "price_total": 2214,
-   "typical_total": 2955,
-   "pct_below": 25,
+   "typical_total": 2930,
+   "pct_below": 24,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2210
   },
   {
@@ -1153,8 +1153,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2211
   },
   {
@@ -1173,12 +1173,12 @@
    "airline": null,
    "price_pp": 1107,
    "price_total": 2215,
-   "typical_total": 3037,
+   "typical_total": 3040,
    "pct_below": 27,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-11-25&ed=2026-11-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2215
   },
   {
@@ -1197,12 +1197,12 @@
    "airline": null,
    "price_pp": 1107,
    "price_total": 2215,
-   "typical_total": 3037,
+   "typical_total": 3040,
    "pct_below": 27,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2215
   },
   {
@@ -1225,8 +1225,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2228
   },
   {
@@ -1249,8 +1249,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2228
   },
   {
@@ -1269,12 +1269,12 @@
    "airline": null,
    "price_pp": 1114,
    "price_total": 2228,
-   "typical_total": 2416,
+   "typical_total": 2415,
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2184
   },
   {
@@ -1297,8 +1297,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2231
   },
   {
@@ -1321,8 +1321,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2234
   },
   {
@@ -1341,12 +1341,12 @@
    "airline": null,
    "price_pp": 1123,
    "price_total": 2246,
-   "typical_total": 2616,
+   "typical_total": 2600,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-26&ed=2026-11-26&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2196
   },
   {
@@ -1365,12 +1365,12 @@
    "airline": null,
    "price_pp": 1126,
    "price_total": 2252,
-   "typical_total": 2980,
-   "pct_below": 24,
+   "typical_total": 2882,
+   "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2252
   },
   {
@@ -1393,8 +1393,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2254
   },
   {
@@ -1413,12 +1413,12 @@
    "airline": null,
    "price_pp": 1130,
    "price_total": 2260,
-   "typical_total": 2727,
+   "typical_total": 2731,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2260
   },
   {
@@ -1441,8 +1441,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2260
   },
   {
@@ -1465,8 +1465,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2260
   },
   {
@@ -1489,8 +1489,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-04&ed=2026-12-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2254
   },
   {
@@ -1513,8 +1513,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-14&ed=2026-12-14&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2231
   },
   {
@@ -1533,12 +1533,12 @@
    "airline": null,
    "price_pp": 1133,
    "price_total": 2266,
-   "typical_total": 2642,
+   "typical_total": 2640,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2266
   },
   {
@@ -1557,12 +1557,12 @@
    "airline": null,
    "price_pp": 1134,
    "price_total": 2268,
-   "typical_total": 2980,
-   "pct_below": 24,
+   "typical_total": 2882,
+   "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2252
   },
   {
@@ -1581,12 +1581,12 @@
    "airline": null,
    "price_pp": 1135,
    "price_total": 2270,
-   "typical_total": 2721,
+   "typical_total": 2727,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2270
   },
   {
@@ -1609,8 +1609,8 @@
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2274
   },
   {
@@ -1633,8 +1633,8 @@
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2274
   },
   {
@@ -1653,12 +1653,12 @@
    "airline": null,
    "price_pp": 1138,
    "price_total": 2275,
-   "typical_total": 2727,
+   "typical_total": 2731,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-12&ed=2026-12-12&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2260
   },
   {
@@ -1677,12 +1677,12 @@
    "airline": null,
    "price_pp": 1142,
    "price_total": 2283,
-   "typical_total": 2620,
+   "typical_total": 2622,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2283
   },
   {
@@ -1701,12 +1701,12 @@
    "airline": null,
    "price_pp": 1142,
    "price_total": 2283,
-   "typical_total": 2805,
+   "typical_total": 2804,
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2283
   },
   {
@@ -1725,12 +1725,12 @@
    "airline": null,
    "price_pp": 1142,
    "price_total": 2283,
-   "typical_total": 2805,
+   "typical_total": 2804,
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2283
   },
   {
@@ -1753,8 +1753,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-08&ed=2027-04-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2234
   },
   {
@@ -1773,12 +1773,12 @@
    "airline": null,
    "price_pp": 1143,
    "price_total": 2286,
-   "typical_total": 2722,
+   "typical_total": 2721,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2286
   },
   {
@@ -1797,12 +1797,12 @@
    "airline": null,
    "price_pp": 1143,
    "price_total": 2286,
-   "typical_total": 2722,
+   "typical_total": 2721,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2286
   },
   {
@@ -1821,12 +1821,12 @@
    "airline": null,
    "price_pp": 1145,
    "price_total": 2291,
-   "typical_total": 2721,
+   "typical_total": 2727,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2270
   },
   {
@@ -1845,12 +1845,12 @@
    "airline": null,
    "price_pp": 1148,
    "price_total": 2296,
-   "typical_total": 3183,
+   "typical_total": 3182,
    "pct_below": 28,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-03-31&ed=2027-03-31&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2296
   },
   {
@@ -1869,12 +1869,12 @@
    "airline": null,
    "price_pp": 1148,
    "price_total": 2297,
-   "typical_total": 3463,
+   "typical_total": 3462,
    "pct_below": 34,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2297
   },
   {
@@ -1897,8 +1897,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-17&ed=2027-05-17&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2297
   },
   {
@@ -1921,8 +1921,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-21&ed=2027-05-21&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2297
   },
   {
@@ -1941,12 +1941,12 @@
    "airline": null,
    "price_pp": 1150,
    "price_total": 2300,
-   "typical_total": 3100,
+   "typical_total": 3094,
    "pct_below": 26,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2300
   },
   {
@@ -1965,12 +1965,12 @@
    "airline": null,
    "price_pp": 1150,
    "price_total": 2300,
-   "typical_total": 2642,
+   "typical_total": 2640,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2266
   },
   {
@@ -1989,12 +1989,12 @@
    "airline": null,
    "price_pp": 1151,
    "price_total": 2302,
-   "typical_total": 2532,
+   "typical_total": 2528,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2302
   },
   {
@@ -2013,12 +2013,12 @@
    "airline": null,
    "price_pp": 1151,
    "price_total": 2302,
-   "typical_total": 2532,
+   "typical_total": 2528,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2302
   },
   {
@@ -2041,8 +2041,8 @@
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2303
   },
   {
@@ -2065,8 +2065,8 @@
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2307
   },
   {
@@ -2089,8 +2089,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2308
   },
   {
@@ -2113,8 +2113,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2308
   },
   {
@@ -2137,8 +2137,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2312
   },
   {
@@ -2161,8 +2161,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2312
   },
   {
@@ -2181,12 +2181,12 @@
    "airline": null,
    "price_pp": 1161,
    "price_total": 2322,
-   "typical_total": 2593,
+   "typical_total": 2594,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-29&ed=2026-11-29&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2322
   },
   {
@@ -2205,12 +2205,12 @@
    "airline": null,
    "price_pp": 1162,
    "price_total": 2323,
-   "typical_total": 2819,
+   "typical_total": 2818,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2323
   },
   {
@@ -2229,12 +2229,12 @@
    "airline": null,
    "price_pp": 1162,
    "price_total": 2323,
-   "typical_total": 3224,
+   "typical_total": 3226,
    "pct_below": 28,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-11&ed=2027-05-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2323
   },
   {
@@ -2253,12 +2253,12 @@
    "airline": null,
    "price_pp": 1162,
    "price_total": 2324,
-   "typical_total": 2620,
+   "typical_total": 2622,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-01-31&ed=2027-01-31&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2283
   },
   {
@@ -2281,8 +2281,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2303
   },
   {
@@ -2301,12 +2301,12 @@
    "airline": null,
    "price_pp": 1163,
    "price_total": 2327,
-   "typical_total": 2734,
+   "typical_total": 2737,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2327
   },
   {
@@ -2329,8 +2329,8 @@
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2329
   },
   {
@@ -2353,8 +2353,8 @@
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-12&ed=2026-12-12&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2307
   },
   {
@@ -2373,12 +2373,12 @@
    "airline": null,
    "price_pp": 1167,
    "price_total": 2334,
-   "typical_total": 3463,
+   "typical_total": 3462,
    "pct_below": 33,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2297
   },
   {
@@ -2397,12 +2397,12 @@
    "airline": null,
    "price_pp": 1171,
    "price_total": 2342,
-   "typical_total": 2819,
+   "typical_total": 2818,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-04&ed=2026-12-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2323
   },
   {
@@ -2421,12 +2421,12 @@
    "airline": null,
    "price_pp": 1173,
    "price_total": 2345,
-   "typical_total": 2862,
+   "typical_total": 2873,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2345
   },
   {
@@ -2445,12 +2445,12 @@
    "airline": null,
    "price_pp": 1173,
    "price_total": 2346,
-   "typical_total": 2818,
+   "typical_total": 2823,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2346
   },
   {
@@ -2469,12 +2469,12 @@
    "airline": null,
    "price_pp": 1173,
    "price_total": 2346,
-   "typical_total": 2829,
+   "typical_total": 2837,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2346
   },
   {
@@ -2493,12 +2493,12 @@
    "airline": null,
    "price_pp": 1174,
    "price_total": 2347,
-   "typical_total": 2844,
-   "pct_below": 17,
+   "typical_total": 2855,
+   "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2347
   },
   {
@@ -2517,12 +2517,12 @@
    "airline": null,
    "price_pp": 1175,
    "price_total": 2350,
-   "typical_total": 3100,
+   "typical_total": 3094,
    "pct_below": 24,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-01&ed=2027-05-01&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2300
   },
   {
@@ -2545,8 +2545,8 @@
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2329
   },
   {
@@ -2565,12 +2565,12 @@
    "airline": null,
    "price_pp": 1176,
    "price_total": 2352,
-   "typical_total": 2844,
-   "pct_below": 17,
+   "typical_total": 2855,
+   "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2347
   },
   {
@@ -2593,8 +2593,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2352
   },
   {
@@ -2617,8 +2617,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2355
   },
   {
@@ -2641,8 +2641,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2355
   },
   {
@@ -2661,12 +2661,12 @@
    "airline": null,
    "price_pp": 1178,
    "price_total": 2355,
-   "typical_total": 2731,
+   "typical_total": 2735,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2355
   },
   {
@@ -2685,12 +2685,12 @@
    "airline": null,
    "price_pp": 1180,
    "price_total": 2361,
-   "typical_total": 2593,
+   "typical_total": 2594,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-06&ed=2026-12-06&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2322
   },
   {
@@ -2709,12 +2709,12 @@
    "airline": null,
    "price_pp": 1181,
    "price_total": 2362,
-   "typical_total": 2731,
-   "pct_below": 13,
+   "typical_total": 2735,
+   "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-30&ed=2026-11-30&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2355
   },
   {
@@ -2733,12 +2733,12 @@
    "airline": null,
    "price_pp": 1182,
    "price_total": 2363,
-   "typical_total": 2829,
-   "pct_below": 16,
+   "typical_total": 2837,
+   "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2346
   },
   {
@@ -2757,12 +2757,12 @@
    "airline": null,
    "price_pp": 1182,
    "price_total": 2364,
-   "typical_total": 2971,
+   "typical_total": 2969,
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2364
   },
   {
@@ -2781,12 +2781,12 @@
    "airline": null,
    "price_pp": 1183,
    "price_total": 2365,
-   "typical_total": 2818,
+   "typical_total": 2823,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2346
   },
   {
@@ -2805,12 +2805,12 @@
    "airline": null,
    "price_pp": 1183,
    "price_total": 2365,
-   "typical_total": 2862,
-   "pct_below": 17,
+   "typical_total": 2873,
+   "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-25&ed=2027-04-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2345
   },
   {
@@ -2829,12 +2829,12 @@
    "airline": null,
    "price_pp": 1183,
    "price_total": 2366,
-   "typical_total": 2894,
+   "typical_total": 2883,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2366
   },
   {
@@ -2853,12 +2853,12 @@
    "airline": null,
    "price_pp": 1183,
    "price_total": 2366,
-   "typical_total": 2894,
+   "typical_total": 2883,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2366
   },
   {
@@ -2877,12 +2877,12 @@
    "airline": null,
    "price_pp": 1183,
    "price_total": 2366,
-   "typical_total": 2674,
-   "pct_below": 12,
+   "typical_total": 2662,
+   "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2366
   },
   {
@@ -2901,12 +2901,12 @@
    "airline": null,
    "price_pp": 1183,
    "price_total": 2366,
-   "typical_total": 2674,
-   "pct_below": 12,
+   "typical_total": 2662,
+   "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2366
   },
   {
@@ -2925,12 +2925,12 @@
    "airline": null,
    "price_pp": 1184,
    "price_total": 2368,
-   "typical_total": 3195,
+   "typical_total": 3190,
    "pct_below": 26,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2368
   },
   {
@@ -2949,12 +2949,12 @@
    "airline": null,
    "price_pp": 1184,
    "price_total": 2368,
-   "typical_total": 3224,
+   "typical_total": 3226,
    "pct_below": 27,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-08&ed=2027-05-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2323
   },
   {
@@ -2977,8 +2977,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2370
   },
   {
@@ -3001,8 +3001,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2370
   },
   {
@@ -3025,8 +3025,8 @@
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-02&ed=2027-04-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2374
   },
   {
@@ -3045,12 +3045,12 @@
    "airline": null,
    "price_pp": 1188,
    "price_total": 2376,
-   "typical_total": 2877,
+   "typical_total": 2862,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-11-25&ed=2026-11-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2376
   },
   {
@@ -3069,12 +3069,12 @@
    "airline": null,
    "price_pp": 1188,
    "price_total": 2376,
-   "typical_total": 2877,
+   "typical_total": 2862,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2376
   },
   {
@@ -3093,12 +3093,12 @@
    "airline": null,
    "price_pp": 1188,
    "price_total": 2377,
-   "typical_total": 2734,
+   "typical_total": 2737,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-04&ed=2026-12-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2327
   },
   {
@@ -3121,8 +3121,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2379
   },
   {
@@ -3145,8 +3145,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2380
   },
   {
@@ -3165,12 +3165,12 @@
    "airline": null,
    "price_pp": 1191,
    "price_total": 2382,
-   "typical_total": 3007,
+   "typical_total": 3004,
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2382
   },
   {
@@ -3189,12 +3189,12 @@
    "airline": null,
    "price_pp": 1191,
    "price_total": 2382,
-   "typical_total": 3007,
+   "typical_total": 3004,
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2382
   },
   {
@@ -3217,8 +3217,8 @@
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2382
   },
   {
@@ -3241,8 +3241,8 @@
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-03-03&ed=2027-03-03&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2382
   },
   {
@@ -3261,12 +3261,12 @@
    "airline": null,
    "price_pp": 1192,
    "price_total": 2383,
-   "typical_total": 2782,
+   "typical_total": 2786,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2383
   },
   {
@@ -3285,12 +3285,12 @@
    "airline": null,
    "price_pp": 1192,
    "price_total": 2383,
-   "typical_total": 2782,
+   "typical_total": 2786,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-04&ed=2026-12-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2383
   },
   {
@@ -3309,12 +3309,12 @@
    "airline": null,
    "price_pp": 1192,
    "price_total": 2385,
-   "typical_total": 2753,
+   "typical_total": 2749,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2385
   },
   {
@@ -3333,12 +3333,12 @@
    "airline": null,
    "price_pp": 1194,
    "price_total": 2389,
-   "typical_total": 2971,
+   "typical_total": 2969,
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-12&ed=2026-12-12&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2364
   },
   {
@@ -3357,12 +3357,12 @@
    "airline": null,
    "price_pp": 1195,
    "price_total": 2391,
-   "typical_total": 2659,
+   "typical_total": 2658,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2391
   },
   {
@@ -3381,12 +3381,12 @@
    "airline": null,
    "price_pp": 1198,
    "price_total": 2395,
-   "typical_total": 3195,
+   "typical_total": 3190,
    "pct_below": 25,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-14&ed=2027-05-14&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2368
   },
   {
@@ -3405,12 +3405,12 @@
    "airline": null,
    "price_pp": 1197,
    "price_total": 2395,
-   "typical_total": 2826,
+   "typical_total": 2813,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2395
   },
   {
@@ -3429,12 +3429,12 @@
    "airline": null,
    "price_pp": 1199,
    "price_total": 2399,
-   "typical_total": 2753,
+   "typical_total": 2749,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2385
   },
   {
@@ -3457,8 +3457,8 @@
    "pct_below": 12,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2380
   },
   {
@@ -3481,8 +3481,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-26&ed=2026-11-26&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2352
   },
   {
@@ -3501,12 +3501,12 @@
    "airline": null,
    "price_pp": 1205,
    "price_total": 2409,
-   "typical_total": 2797,
+   "typical_total": 2794,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2409
   },
   {
@@ -3529,8 +3529,8 @@
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2411
   },
   {
@@ -3549,12 +3549,12 @@
    "airline": null,
    "price_pp": 1206,
    "price_total": 2412,
-   "typical_total": 3059,
+   "typical_total": 3048,
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2412
   },
   {
@@ -3573,12 +3573,12 @@
    "airline": null,
    "price_pp": 1208,
    "price_total": 2415,
-   "typical_total": 2705,
+   "typical_total": 2706,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2415
   },
   {
@@ -3597,12 +3597,12 @@
    "airline": null,
    "price_pp": 1211,
    "price_total": 2421,
-   "typical_total": 2766,
+   "typical_total": 2767,
    "pct_below": 12,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2421
   },
   {
@@ -3621,12 +3621,12 @@
    "airline": null,
    "price_pp": 1211,
    "price_total": 2421,
-   "typical_total": 2766,
+   "typical_total": 2767,
    "pct_below": 12,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2421
   },
   {
@@ -3649,8 +3649,8 @@
    "pct_below": 2,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2429
   },
   {
@@ -3673,8 +3673,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2430
   },
   {
@@ -3697,8 +3697,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2430
   },
   {
@@ -3717,12 +3717,12 @@
    "airline": null,
    "price_pp": 1215,
    "price_total": 2430,
-   "typical_total": 2797,
+   "typical_total": 2794,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2409
   },
   {
@@ -3741,12 +3741,12 @@
    "airline": null,
    "price_pp": 1216,
    "price_total": 2431,
-   "typical_total": 2896,
+   "typical_total": 2891,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2431
   },
   {
@@ -3769,8 +3769,8 @@
    "pct_below": 12,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2379
   },
   {
@@ -3789,12 +3789,12 @@
    "airline": null,
    "price_pp": 1217,
    "price_total": 2433,
-   "typical_total": 3168,
-   "pct_below": 23,
+   "typical_total": 3123,
+   "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2433
   },
   {
@@ -3813,12 +3813,12 @@
    "airline": null,
    "price_pp": 1216,
    "price_total": 2433,
-   "typical_total": 2861,
+   "typical_total": 2864,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2433
   },
   {
@@ -3841,8 +3841,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-03-10&ed=2027-03-10&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2374
   },
   {
@@ -3861,12 +3861,12 @@
    "airline": null,
    "price_pp": 1218,
    "price_total": 2436,
-   "typical_total": 2772,
+   "typical_total": 2767,
    "pct_below": 12,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2436
   },
   {
@@ -3889,8 +3889,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2438
   },
   {
@@ -3909,12 +3909,12 @@
    "airline": null,
    "price_pp": 1219,
    "price_total": 2438,
-   "typical_total": 2903,
+   "typical_total": 2899,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2438
   },
   {
@@ -3933,12 +3933,12 @@
    "airline": null,
    "price_pp": 1220,
    "price_total": 2441,
-   "typical_total": 3006,
+   "typical_total": 3007,
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2441
   },
   {
@@ -3957,12 +3957,12 @@
    "airline": null,
    "price_pp": 1220,
    "price_total": 2441,
-   "typical_total": 2659,
+   "typical_total": 2658,
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-12&ed=2027-05-12&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2391
   },
   {
@@ -3985,8 +3985,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-19&ed=2027-05-19&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2443
   },
   {
@@ -4005,12 +4005,12 @@
    "airline": null,
    "price_pp": 1222,
    "price_total": 2443,
-   "typical_total": 2772,
+   "typical_total": 2767,
    "pct_below": 12,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-08&ed=2027-04-08&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2436
   },
   {
@@ -4029,12 +4029,12 @@
    "airline": null,
    "price_pp": 1222,
    "price_total": 2444,
-   "typical_total": 2713,
+   "typical_total": 2715,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2444
   },
   {
@@ -4057,8 +4057,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2445
   },
   {
@@ -4081,8 +4081,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2445
   },
   {
@@ -4105,8 +4105,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2445
   },
   {
@@ -4129,8 +4129,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2445
   },
   {
@@ -4149,12 +4149,12 @@
    "airline": null,
    "price_pp": 1225,
    "price_total": 2449,
-   "typical_total": 3168,
-   "pct_below": 23,
+   "typical_total": 3123,
+   "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2433
   },
   {
@@ -4173,12 +4173,12 @@
    "airline": null,
    "price_pp": 1225,
    "price_total": 2450,
-   "typical_total": 2826,
+   "typical_total": 2813,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-08&ed=2027-05-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2395
   },
   {
@@ -4201,8 +4201,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-07&ed=2027-04-07&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2451
   },
   {
@@ -4225,8 +4225,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-13&ed=2027-04-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2451
   },
   {
@@ -4245,12 +4245,12 @@
    "airline": null,
    "price_pp": 1226,
    "price_total": 2452,
-   "typical_total": 2713,
+   "typical_total": 2715,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2444
   },
   {
@@ -4269,12 +4269,12 @@
    "airline": null,
    "price_pp": 1226,
    "price_total": 2452,
-   "typical_total": 2876,
-   "pct_below": 15,
+   "typical_total": 2863,
+   "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2452
   },
   {
@@ -4297,8 +4297,8 @@
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2453
   },
   {
@@ -4321,8 +4321,8 @@
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2453
   },
   {
@@ -4341,12 +4341,12 @@
    "airline": null,
    "price_pp": 1227,
    "price_total": 2455,
-   "typical_total": 2923,
+   "typical_total": 2925,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2455
   },
   {
@@ -4369,8 +4369,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2457
   },
   {
@@ -4393,8 +4393,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2457
   },
   {
@@ -4417,8 +4417,8 @@
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-08&ed=2027-05-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2411
   },
   {
@@ -4437,12 +4437,12 @@
    "airline": null,
    "price_pp": 1231,
    "price_total": 2462,
-   "typical_total": 3059,
-   "pct_below": 20,
+   "typical_total": 3048,
+   "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-20&ed=2027-05-20&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2412
   },
   {
@@ -4461,12 +4461,12 @@
    "airline": null,
    "price_pp": 1231,
    "price_total": 2462,
-   "typical_total": 3006,
+   "typical_total": 3007,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2441
   },
   {
@@ -4489,8 +4489,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2462
   },
   {
@@ -4513,8 +4513,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2462
   },
   {
@@ -4533,12 +4533,12 @@
    "airline": null,
    "price_pp": 1233,
    "price_total": 2465,
-   "typical_total": 2705,
+   "typical_total": 2706,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-26&ed=2026-11-26&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2415
   },
   {
@@ -4561,8 +4561,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2466
   },
   {
@@ -4581,12 +4581,12 @@
    "airline": null,
    "price_pp": 1233,
    "price_total": 2467,
-   "typical_total": 2923,
+   "typical_total": 2925,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2455
   },
   {
@@ -4609,8 +4609,8 @@
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-04&ed=2026-12-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2438
   },
   {
@@ -4629,12 +4629,12 @@
    "airline": null,
    "price_pp": 1237,
    "price_total": 2474,
-   "typical_total": 3143,
+   "typical_total": 3134,
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2474
   },
   {
@@ -4653,12 +4653,12 @@
    "airline": null,
    "price_pp": 1237,
    "price_total": 2474,
-   "typical_total": 3183,
+   "typical_total": 3182,
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-20&ed=2027-05-20&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2296
   },
   {
@@ -4677,12 +4677,12 @@
    "airline": null,
    "price_pp": 1238,
    "price_total": 2475,
-   "typical_total": 2734,
+   "typical_total": 2731,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2475
   },
   {
@@ -4701,12 +4701,12 @@
    "airline": null,
    "price_pp": 1238,
    "price_total": 2475,
-   "typical_total": 2734,
+   "typical_total": 2731,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2475
   },
   {
@@ -4725,12 +4725,12 @@
    "airline": null,
    "price_pp": 1239,
    "price_total": 2478,
-   "typical_total": 2861,
+   "typical_total": 2864,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-08&ed=2027-05-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2433
   },
   {
@@ -4753,8 +4753,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2478
   },
   {
@@ -4773,12 +4773,12 @@
    "airline": null,
    "price_pp": 1239,
    "price_total": 2479,
-   "typical_total": 3219,
+   "typical_total": 3212,
    "pct_below": 23,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2479
   },
   {
@@ -4801,8 +4801,8 @@
    "pct_below": 0,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-26&ed=2026-11-26&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2429
   },
   {
@@ -4821,12 +4821,12 @@
    "airline": null,
    "price_pp": 1241,
    "price_total": 2481,
-   "typical_total": 2896,
+   "typical_total": 2891,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-07&ed=2026-12-07&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2431
   },
   {
@@ -4845,12 +4845,12 @@
    "airline": null,
    "price_pp": 1242,
    "price_total": 2483,
-   "typical_total": 2903,
+   "typical_total": 2899,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-08&ed=2027-05-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2438
   },
   {
@@ -4869,12 +4869,12 @@
    "airline": null,
    "price_pp": 1244,
    "price_total": 2489,
-   "typical_total": 3031,
+   "typical_total": 3047,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2489
   },
   {
@@ -4893,12 +4893,12 @@
    "airline": null,
    "price_pp": 1246,
    "price_total": 2492,
-   "typical_total": 3211,
+   "typical_total": 3206,
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2492
   },
   {
@@ -4917,12 +4917,12 @@
    "airline": null,
    "price_pp": 1246,
    "price_total": 2492,
-   "typical_total": 3211,
+   "typical_total": 3206,
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2492
   },
   {
@@ -4945,8 +4945,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-22&ed=2027-05-22&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2443
   },
   {
@@ -4965,12 +4965,12 @@
    "airline": null,
    "price_pp": 1248,
    "price_total": 2496,
-   "typical_total": 3013,
+   "typical_total": 3016,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2496
   },
   {
@@ -4989,12 +4989,12 @@
    "airline": null,
    "price_pp": 1249,
    "price_total": 2499,
-   "typical_total": 3219,
+   "typical_total": 3212,
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2479
   },
   {
@@ -5013,12 +5013,12 @@
    "airline": null,
    "price_pp": 1250,
    "price_total": 2500,
-   "typical_total": 2876,
+   "typical_total": 2863,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2452
   },
   {
@@ -5037,12 +5037,12 @@
    "airline": null,
    "price_pp": 1252,
    "price_total": 2503,
-   "typical_total": 3001,
+   "typical_total": 3006,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2503
   },
   {
@@ -5061,12 +5061,12 @@
    "airline": null,
    "price_pp": 1251,
    "price_total": 2503,
-   "typical_total": 3001,
+   "typical_total": 3006,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2503
   },
   {
@@ -5085,12 +5085,12 @@
    "airline": null,
    "price_pp": 1253,
    "price_total": 2505,
-   "typical_total": 2941,
+   "typical_total": 2947,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2505
   },
   {
@@ -5113,8 +5113,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2505
   },
   {
@@ -5137,8 +5137,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2505
   },
   {
@@ -5161,8 +5161,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2511
   },
   {
@@ -5185,8 +5185,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2511
   },
   {
@@ -5205,12 +5205,12 @@
    "airline": null,
    "price_pp": 1257,
    "price_total": 2514,
-   "typical_total": 3050,
+   "typical_total": 3053,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2514
   },
   {
@@ -5229,12 +5229,12 @@
    "airline": null,
    "price_pp": 1258,
    "price_total": 2516,
-   "typical_total": 2831,
+   "typical_total": 2826,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2516
   },
   {
@@ -5253,12 +5253,12 @@
    "airline": null,
    "price_pp": 1258,
    "price_total": 2516,
-   "typical_total": 2831,
+   "typical_total": 2826,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2516
   },
   {
@@ -5281,8 +5281,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-26&ed=2026-11-26&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2466
   },
   {
@@ -5305,8 +5305,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-10&ed=2026-12-10&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2478
   },
   {
@@ -5325,12 +5325,12 @@
    "airline": null,
    "price_pp": 1258,
    "price_total": 2517,
-   "typical_total": 2836,
+   "typical_total": 2837,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2517
   },
   {
@@ -5349,12 +5349,12 @@
    "airline": null,
    "price_pp": 1260,
    "price_total": 2519,
-   "typical_total": 2995,
+   "typical_total": 2986,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2519
   },
   {
@@ -5377,8 +5377,8 @@
    "pct_below": 29,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-03-30&ed=2027-03-30&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2520
   },
   {
@@ -5401,8 +5401,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2521
   },
   {
@@ -5425,8 +5425,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2521
   },
   {
@@ -5445,12 +5445,12 @@
    "airline": null,
    "price_pp": 1262,
    "price_total": 2524,
-   "typical_total": 3143,
-   "pct_below": 20,
+   "typical_total": 3134,
+   "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-20&ed=2027-05-20&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2474
   },
   {
@@ -5473,8 +5473,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-14&ed=2026-12-14&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2527
   },
   {
@@ -5497,8 +5497,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2528
   },
   {
@@ -5521,8 +5521,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2528
   },
   {
@@ -5541,12 +5541,12 @@
    "airline": null,
    "price_pp": 1265,
    "price_total": 2531,
-   "typical_total": 3444,
-   "pct_below": 27,
+   "typical_total": 3443,
+   "pct_below": 26,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-04&ed=2027-05-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2531
   },
   {
@@ -5565,12 +5565,12 @@
    "airline": null,
    "price_pp": 1265,
    "price_total": 2531,
-   "typical_total": 3444,
-   "pct_below": 27,
+   "typical_total": 3443,
+   "pct_below": 26,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2531
   },
   {
@@ -5589,12 +5589,12 @@
    "airline": null,
    "price_pp": 1268,
    "price_total": 2537,
-   "typical_total": 3013,
+   "typical_total": 3016,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-10&ed=2026-12-10&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2496
   },
   {
@@ -5617,8 +5617,8 @@
    "pct_below": 26,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2538
   },
   {
@@ -5637,12 +5637,12 @@
    "airline": null,
    "price_pp": 1269,
    "price_total": 2539,
-   "typical_total": 3031,
-   "pct_below": 16,
+   "typical_total": 3047,
+   "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-26&ed=2026-11-26&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2489
   },
   {
@@ -5665,8 +5665,8 @@
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2541
   },
   {
@@ -5689,8 +5689,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2527
   },
   {
@@ -5709,12 +5709,12 @@
    "airline": null,
    "price_pp": 1271,
    "price_total": 2543,
-   "typical_total": 3050,
+   "typical_total": 3053,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-07&ed=2026-12-07&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2514
   },
   {
@@ -5733,12 +5733,12 @@
    "airline": null,
    "price_pp": 1272,
    "price_total": 2544,
-   "typical_total": 2941,
+   "typical_total": 2947,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-12&ed=2026-12-12&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2505
   },
   {
@@ -5757,12 +5757,12 @@
    "airline": null,
    "price_pp": 1272,
    "price_total": 2545,
-   "typical_total": 3467,
-   "pct_below": 27,
+   "typical_total": 3452,
+   "pct_below": 26,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-07&ed=2027-04-07&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2545
   },
   {
@@ -5781,12 +5781,12 @@
    "airline": null,
    "price_pp": 1273,
    "price_total": 2547,
-   "typical_total": 3206,
+   "typical_total": 3209,
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2547
   },
   {
@@ -5805,12 +5805,12 @@
    "airline": null,
    "price_pp": 1276,
    "price_total": 2551,
-   "typical_total": 3267,
+   "typical_total": 3263,
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-12&ed=2026-12-12&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2551
   },
   {
@@ -5829,12 +5829,12 @@
    "airline": null,
    "price_pp": 1275,
    "price_total": 2551,
-   "typical_total": 3612,
+   "typical_total": 3615,
    "pct_below": 29,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-10&ed=2027-05-10&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2551
   },
   {
@@ -5853,12 +5853,12 @@
    "airline": null,
    "price_pp": 1278,
    "price_total": 2555,
-   "typical_total": 2995,
-   "pct_below": 15,
+   "typical_total": 2986,
+   "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-30&ed=2027-04-30&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2519
   },
   {
@@ -5877,12 +5877,12 @@
    "airline": null,
    "price_pp": 1278,
    "price_total": 2556,
-   "typical_total": 2942,
+   "typical_total": 2939,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-12&ed=2027-05-12&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2556
   },
   {
@@ -5901,12 +5901,12 @@
    "airline": null,
    "price_pp": 1278,
    "price_total": 2556,
-   "typical_total": 2942,
+   "typical_total": 2939,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-17&ed=2027-05-17&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2556
   },
   {
@@ -5925,12 +5925,12 @@
    "airline": null,
    "price_pp": 1278,
    "price_total": 2557,
-   "typical_total": 3166,
+   "typical_total": 3160,
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2557
   },
   {
@@ -5949,12 +5949,12 @@
    "airline": null,
    "price_pp": 1279,
    "price_total": 2559,
-   "typical_total": 2975,
+   "typical_total": 2974,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2559
   },
   {
@@ -5973,12 +5973,12 @@
    "airline": null,
    "price_pp": 1279,
    "price_total": 2559,
-   "typical_total": 2836,
+   "typical_total": 2837,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2517
   },
   {
@@ -5997,12 +5997,12 @@
    "airline": null,
    "price_pp": 1282,
    "price_total": 2564,
-   "typical_total": 3267,
-   "pct_below": 22,
+   "typical_total": 3263,
+   "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2551
   },
   {
@@ -6021,12 +6021,12 @@
    "airline": null,
    "price_pp": 1284,
    "price_total": 2568,
-   "typical_total": 2819,
+   "typical_total": 2818,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2568
   },
   {
@@ -6045,12 +6045,12 @@
    "airline": null,
    "price_pp": 1284,
    "price_total": 2569,
-   "typical_total": 3056,
+   "typical_total": 3055,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2569
   },
   {
@@ -6073,8 +6073,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-11-25&ed=2026-11-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2571
   },
   {
@@ -6097,8 +6097,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2571
   },
   {
@@ -6117,12 +6117,12 @@
    "airline": null,
    "price_pp": 1287,
    "price_total": 2574,
-   "typical_total": 2975,
+   "typical_total": 2974,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-27&ed=2026-11-27&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2559
   },
   {
@@ -6141,12 +6141,12 @@
    "airline": null,
    "price_pp": 1288,
    "price_total": 2576,
-   "typical_total": 2761,
+   "typical_total": 2763,
    "pct_below": 7,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-01-13&ed=2027-01-13&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2576
   },
   {
@@ -6165,12 +6165,12 @@
    "airline": null,
    "price_pp": 1288,
    "price_total": 2576,
-   "typical_total": 2761,
+   "typical_total": 2763,
    "pct_below": 7,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2576
   },
   {
@@ -6189,12 +6189,12 @@
    "airline": null,
    "price_pp": 1288,
    "price_total": 2577,
-   "typical_total": 3166,
-   "pct_below": 19,
+   "typical_total": 3160,
+   "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2557
   },
   {
@@ -6213,12 +6213,12 @@
    "airline": null,
    "price_pp": 1291,
    "price_total": 2581,
-   "typical_total": 3127,
+   "typical_total": 3117,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-04&ed=2026-12-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2581
   },
   {
@@ -6237,12 +6237,12 @@
    "airline": null,
    "price_pp": 1292,
    "price_total": 2584,
-   "typical_total": 3477,
-   "pct_below": 26,
+   "typical_total": 3448,
+   "pct_below": 25,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-17&ed=2027-05-17&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2584
   },
   {
@@ -6261,12 +6261,12 @@
    "airline": null,
    "price_pp": 1294,
    "price_total": 2587,
-   "typical_total": 2819,
+   "typical_total": 2818,
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2568
   },
   {
@@ -6289,8 +6289,8 @@
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2587
   },
   {
@@ -6313,8 +6313,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2587
   },
   {
@@ -6337,8 +6337,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2589
   },
   {
@@ -6361,8 +6361,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2589
   },
   {
@@ -6381,12 +6381,12 @@
    "airline": null,
    "price_pp": 1295,
    "price_total": 2590,
-   "typical_total": 2911,
+   "typical_total": 2910,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2590
   },
   {
@@ -6409,8 +6409,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-04&ed=2026-12-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2590
   },
   {
@@ -6433,8 +6433,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2541
   },
   {
@@ -6453,12 +6453,12 @@
    "airline": null,
    "price_pp": 1295,
    "price_total": 2591,
-   "typical_total": 3034,
+   "typical_total": 3030,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-04&ed=2027-05-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2591
   },
   {
@@ -6477,12 +6477,12 @@
    "airline": null,
    "price_pp": 1295,
    "price_total": 2591,
-   "typical_total": 3034,
+   "typical_total": 3030,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2591
   },
   {
@@ -6501,12 +6501,12 @@
    "airline": null,
    "price_pp": 1296,
    "price_total": 2592,
-   "typical_total": 3467,
+   "typical_total": 3452,
    "pct_below": 25,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-13&ed=2027-04-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2545
   },
   {
@@ -6529,8 +6529,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2594
   },
   {
@@ -6549,12 +6549,12 @@
    "airline": null,
    "price_pp": 1297,
    "price_total": 2594,
-   "typical_total": 3139,
-   "pct_below": 17,
+   "typical_total": 3144,
+   "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2594
   },
   {
@@ -6573,12 +6573,12 @@
    "airline": null,
    "price_pp": 1298,
    "price_total": 2596,
-   "typical_total": 3440,
-   "pct_below": 25,
+   "typical_total": 3435,
+   "pct_below": 24,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2596
   },
   {
@@ -6597,12 +6597,12 @@
    "airline": null,
    "price_pp": 1298,
    "price_total": 2596,
-   "typical_total": 3440,
-   "pct_below": 25,
+   "typical_total": 3435,
+   "pct_below": 24,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2596
   },
   {
@@ -6621,12 +6621,12 @@
    "airline": null,
    "price_pp": 1299,
    "price_total": 2597,
-   "typical_total": 3189,
+   "typical_total": 3188,
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2597
   },
   {
@@ -6645,12 +6645,12 @@
    "airline": null,
    "price_pp": 1299,
    "price_total": 2597,
-   "typical_total": 3189,
+   "typical_total": 3188,
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2597
   },
   {
@@ -6669,12 +6669,12 @@
    "airline": null,
    "price_pp": 1298,
    "price_total": 2597,
-   "typical_total": 3206,
+   "typical_total": 3209,
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2547
   },
   {
@@ -6693,12 +6693,12 @@
    "airline": null,
    "price_pp": 1299,
    "price_total": 2598,
-   "typical_total": 3052,
+   "typical_total": 3051,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2598
   },
   {
@@ -6717,12 +6717,12 @@
    "airline": null,
    "price_pp": 1299,
    "price_total": 2598,
-   "typical_total": 3052,
+   "typical_total": 3051,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2598
   },
   {
@@ -6741,12 +6741,12 @@
    "airline": null,
    "price_pp": 1299,
    "price_total": 2598,
-   "typical_total": 3239,
+   "typical_total": 3242,
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2598
   },
   {
@@ -6769,8 +6769,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-11-25&ed=2026-11-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2590
   },
   {
@@ -6789,12 +6789,12 @@
    "airline": null,
    "price_pp": 1300,
    "price_total": 2601,
-   "typical_total": 3334,
+   "typical_total": 3333,
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2601
   },
   {
@@ -6813,12 +6813,12 @@
    "airline": null,
    "price_pp": 1300,
    "price_total": 2601,
-   "typical_total": 3334,
+   "typical_total": 3333,
    "pct_below": 22,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2601
   },
   {
@@ -6837,12 +6837,12 @@
    "airline": null,
    "price_pp": 1301,
    "price_total": 2602,
-   "typical_total": 3127,
+   "typical_total": 3117,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2581
   },
   {
@@ -6865,8 +6865,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2602
   },
   {
@@ -6885,12 +6885,12 @@
    "airline": null,
    "price_pp": 1301,
    "price_total": 2602,
-   "typical_total": 3000,
+   "typical_total": 2997,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-12&ed=2027-05-12&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2602
   },
   {
@@ -6909,12 +6909,12 @@
    "airline": null,
    "price_pp": 1303,
    "price_total": 2606,
-   "typical_total": 3477,
-   "pct_below": 25,
+   "typical_total": 3448,
+   "pct_below": 24,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2584
   },
   {
@@ -6937,8 +6937,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-09&ed=2027-04-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2607
   },
   {
@@ -6961,8 +6961,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-10&ed=2027-04-10&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2607
   },
   {
@@ -6985,8 +6985,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2608
   },
   {
@@ -7009,8 +7009,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2587
   },
   {
@@ -7033,8 +7033,8 @@
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-13&ed=2027-04-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2610
   },
   {
@@ -7057,8 +7057,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-04&ed=2027-05-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2608
   },
   {
@@ -7081,8 +7081,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2614
   },
   {
@@ -7101,12 +7101,12 @@
    "airline": null,
    "price_pp": 1308,
    "price_total": 2615,
-   "typical_total": 3099,
+   "typical_total": 3112,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2615
   },
   {
@@ -7129,8 +7129,8 @@
    "pct_below": 23,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-07&ed=2027-05-07&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2538
   },
   {
@@ -7149,12 +7149,12 @@
    "airline": null,
    "price_pp": 1309,
    "price_total": 2617,
-   "typical_total": 3288,
+   "typical_total": 3285,
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2617
   },
   {
@@ -7173,12 +7173,12 @@
    "airline": null,
    "price_pp": 1309,
    "price_total": 2619,
-   "typical_total": 3056,
+   "typical_total": 3055,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-30&ed=2026-11-30&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2569
   },
   {
@@ -7197,12 +7197,12 @@
    "airline": null,
    "price_pp": 1309,
    "price_total": 2619,
-   "typical_total": 3612,
+   "typical_total": 3615,
    "pct_below": 28,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-07&ed=2027-05-07&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2551
   },
   {
@@ -7221,12 +7221,12 @@
    "airline": null,
    "price_pp": 1311,
    "price_total": 2621,
-   "typical_total": 3139,
-   "pct_below": 16,
+   "typical_total": 3144,
+   "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2594
   },
   {
@@ -7245,12 +7245,12 @@
    "airline": null,
    "price_pp": 1310,
    "price_total": 2621,
-   "typical_total": 3239,
+   "typical_total": 3242,
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2598
   },
   {
@@ -7273,8 +7273,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-04&ed=2027-05-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2621
   },
   {
@@ -7297,8 +7297,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2621
   },
   {
@@ -7317,12 +7317,12 @@
    "airline": null,
    "price_pp": 1312,
    "price_total": 2624,
-   "typical_total": 3328,
+   "typical_total": 3312,
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2624
   },
   {
@@ -7341,12 +7341,12 @@
    "airline": null,
    "price_pp": 1312,
    "price_total": 2624,
-   "typical_total": 3328,
+   "typical_total": 3312,
    "pct_below": 21,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2624
   },
   {
@@ -7365,12 +7365,12 @@
    "airline": null,
    "price_pp": 1313,
    "price_total": 2626,
-   "typical_total": 3416,
+   "typical_total": 3414,
    "pct_below": 23,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-04&ed=2027-05-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2626
   },
   {
@@ -7389,12 +7389,12 @@
    "airline": null,
    "price_pp": 1313,
    "price_total": 2626,
-   "typical_total": 3416,
+   "typical_total": 3414,
    "pct_below": 23,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2626
   },
   {
@@ -7413,12 +7413,12 @@
    "airline": null,
    "price_pp": 1314,
    "price_total": 2628,
-   "typical_total": 3288,
+   "typical_total": 3285,
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2617
   },
   {
@@ -7441,8 +7441,8 @@
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2587
   },
   {
@@ -7461,12 +7461,12 @@
    "airline": null,
    "price_pp": 1314,
    "price_total": 2629,
-   "typical_total": 3273,
+   "typical_total": 3272,
    "pct_below": 20,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2629
   },
   {
@@ -7485,12 +7485,12 @@
    "airline": null,
    "price_pp": 1315,
    "price_total": 2630,
-   "typical_total": 3663,
+   "typical_total": 3659,
    "pct_below": 28,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-25&ed=2027-04-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2630
   },
   {
@@ -7509,12 +7509,12 @@
    "airline": null,
    "price_pp": 1315,
    "price_total": 2630,
-   "typical_total": 3663,
+   "typical_total": 3659,
    "pct_below": 28,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2630
   },
   {
@@ -7533,12 +7533,12 @@
    "airline": null,
    "price_pp": 1319,
    "price_total": 2637,
-   "typical_total": 3708,
+   "typical_total": 3705,
    "pct_below": 29,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2637
   },
   {
@@ -7557,12 +7557,12 @@
    "airline": null,
    "price_pp": 1319,
    "price_total": 2637,
-   "typical_total": 3708,
+   "typical_total": 3705,
    "pct_below": 29,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2637
   },
   {
@@ -7581,12 +7581,12 @@
    "airline": null,
    "price_pp": 1318,
    "price_total": 2637,
-   "typical_total": 2911,
+   "typical_total": 2910,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2590
   },
   {
@@ -7605,12 +7605,12 @@
    "airline": null,
    "price_pp": 1320,
    "price_total": 2639,
-   "typical_total": 3011,
-   "pct_below": 12,
+   "typical_total": 3017,
+   "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2639
   },
   {
@@ -7629,12 +7629,12 @@
    "airline": null,
    "price_pp": 1319,
    "price_total": 2639,
-   "typical_total": 3174,
+   "typical_total": 3167,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2639
   },
   {
@@ -7657,8 +7657,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-19&ed=2027-05-19&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2639
   },
   {
@@ -7677,12 +7677,12 @@
    "airline": null,
    "price_pp": 1321,
    "price_total": 2641,
-   "typical_total": 2932,
+   "typical_total": 2926,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2641
   },
   {
@@ -7701,12 +7701,12 @@
    "airline": null,
    "price_pp": 1322,
    "price_total": 2644,
-   "typical_total": 3901,
+   "typical_total": 3900,
    "pct_below": 32,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2644
   },
   {
@@ -7729,8 +7729,8 @@
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-11-25&ed=2026-11-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2644
   },
   {
@@ -7753,8 +7753,8 @@
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2644
   },
   {
@@ -7773,12 +7773,12 @@
    "airline": null,
    "price_pp": 1323,
    "price_total": 2646,
-   "typical_total": 3793,
+   "typical_total": 3783,
    "pct_below": 30,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-20&ed=2027-04-20&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2646
   },
   {
@@ -7797,12 +7797,12 @@
    "airline": null,
    "price_pp": 1323,
    "price_total": 2647,
-   "typical_total": 3174,
-   "pct_below": 17,
+   "typical_total": 3167,
+   "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-12&ed=2026-12-12&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2639
   },
   {
@@ -7825,8 +7825,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-18&ed=2027-05-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2648
   },
   {
@@ -7845,12 +7845,12 @@
    "airline": null,
    "price_pp": 1324,
    "price_total": 2649,
-   "typical_total": 3901,
+   "typical_total": 3900,
    "pct_below": 32,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2644
   },
   {
@@ -7869,12 +7869,12 @@
    "airline": null,
    "price_pp": 1325,
    "price_total": 2650,
-   "typical_total": 3208,
+   "typical_total": 3200,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-04&ed=2026-12-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2650
   },
   {
@@ -7897,8 +7897,8 @@
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-25&ed=2027-04-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2651
   },
   {
@@ -7921,8 +7921,8 @@
    "pct_below": 12,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-01&ed=2027-05-01&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2602
   },
   {
@@ -7941,12 +7941,12 @@
    "airline": null,
    "price_pp": 1326,
    "price_total": 2652,
-   "typical_total": 3793,
+   "typical_total": 3783,
    "pct_below": 30,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-13&ed=2027-04-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2646
   },
   {
@@ -7969,8 +7969,8 @@
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2648
   },
   {
@@ -7993,8 +7993,8 @@
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-18&ed=2027-05-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2652
   },
   {
@@ -8017,8 +8017,8 @@
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-17&ed=2026-12-17&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2653
   },
   {
@@ -8041,8 +8041,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-03-09&ed=2027-03-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2610
   },
   {
@@ -8065,8 +8065,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-20&ed=2027-05-20&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2614
   },
   {
@@ -8089,8 +8089,8 @@
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2652
   },
   {
@@ -8109,12 +8109,12 @@
    "airline": null,
    "price_pp": 1329,
    "price_total": 2658,
-   "typical_total": 3000,
+   "typical_total": 2997,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-30&ed=2027-04-30&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2602
   },
   {
@@ -8133,12 +8133,12 @@
    "airline": null,
    "price_pp": 1330,
    "price_total": 2660,
-   "typical_total": 3099,
-   "pct_below": 14,
+   "typical_total": 3112,
+   "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-11&ed=2027-05-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2615
   },
   {
@@ -8161,8 +8161,8 @@
    "pct_below": 2,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-11-25&ed=2026-11-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2661
   },
   {
@@ -8185,8 +8185,8 @@
    "pct_below": 2,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2661
   },
   {
@@ -8205,12 +8205,12 @@
    "airline": null,
    "price_pp": 1331,
    "price_total": 2662,
-   "typical_total": 3002,
-   "pct_below": 11,
+   "typical_total": 3010,
+   "pct_below": 12,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2662
   },
   {
@@ -8229,12 +8229,12 @@
    "airline": null,
    "price_pp": 1333,
    "price_total": 2665,
-   "typical_total": 2969,
+   "typical_total": 2955,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-22&ed=2027-05-22&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2665
   },
   {
@@ -8253,12 +8253,12 @@
    "airline": null,
    "price_pp": 1333,
    "price_total": 2665,
-   "typical_total": 2969,
+   "typical_total": 2955,
    "pct_below": 10,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-23&ed=2027-05-23&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2665
   },
   {
@@ -8281,8 +8281,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-12&ed=2026-12-12&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2594
   },
   {
@@ -8301,12 +8301,12 @@
    "airline": null,
    "price_pp": 1334,
    "price_total": 2668,
-   "typical_total": 2932,
+   "typical_total": 2926,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2641
   },
   {
@@ -8325,12 +8325,12 @@
    "airline": null,
    "price_pp": 1336,
    "price_total": 2672,
-   "typical_total": 3236,
+   "typical_total": 3227,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-20&ed=2027-05-20&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2672
   },
   {
@@ -8349,12 +8349,12 @@
    "airline": null,
    "price_pp": 1336,
    "price_total": 2672,
-   "typical_total": 3236,
+   "typical_total": 3227,
    "pct_below": 17,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-24&ed=2027-05-24&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2672
   },
   {
@@ -8377,8 +8377,8 @@
    "pct_below": 25,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-18&ed=2027-05-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2520
   },
   {
@@ -8397,12 +8397,12 @@
    "airline": null,
    "price_pp": 1338,
    "price_total": 2675,
-   "typical_total": 3208,
-   "pct_below": 17,
+   "typical_total": 3200,
+   "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2650
   },
   {
@@ -8425,8 +8425,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2676
   },
   {
@@ -8449,8 +8449,8 @@
    "pct_below": 8,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-20&ed=2027-04-20&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2676
   },
   {
@@ -8469,12 +8469,12 @@
    "airline": null,
    "price_pp": 1338,
    "price_total": 2677,
-   "typical_total": 3171,
-   "pct_below": 16,
+   "typical_total": 3168,
+   "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2677
   },
   {
@@ -8493,12 +8493,12 @@
    "airline": null,
    "price_pp": 1338,
    "price_total": 2677,
-   "typical_total": 3171,
-   "pct_below": 16,
+   "typical_total": 3168,
+   "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2677
   },
   {
@@ -8517,12 +8517,12 @@
    "airline": null,
    "price_pp": 1340,
    "price_total": 2680,
-   "typical_total": 3273,
+   "typical_total": 3272,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-07&ed=2026-12-07&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2629
   },
   {
@@ -8545,8 +8545,8 @@
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-26&ed=2027-04-26&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2651
   },
   {
@@ -8565,12 +8565,12 @@
    "airline": null,
    "price_pp": 1344,
    "price_total": 2687,
-   "typical_total": 3020,
+   "typical_total": 3016,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2687
   },
   {
@@ -8589,12 +8589,12 @@
    "airline": null,
    "price_pp": 1344,
    "price_total": 2688,
-   "typical_total": 3305,
+   "typical_total": 3303,
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-16&ed=2027-05-16&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2688
   },
   {
@@ -8613,12 +8613,12 @@
    "airline": null,
    "price_pp": 1344,
    "price_total": 2689,
-   "typical_total": 3002,
-   "pct_below": 10,
+   "typical_total": 3010,
+   "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2662
   },
   {
@@ -8637,12 +8637,12 @@
    "airline": null,
    "price_pp": 1345,
    "price_total": 2689,
-   "typical_total": 3011,
+   "typical_total": 3017,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2639
   },
   {
@@ -8661,12 +8661,12 @@
    "airline": null,
    "price_pp": 1346,
    "price_total": 2692,
-   "typical_total": 3220,
+   "typical_total": 3204,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2692
   },
   {
@@ -8685,12 +8685,12 @@
    "airline": null,
    "price_pp": 1346,
    "price_total": 2692,
-   "typical_total": 3220,
+   "typical_total": 3204,
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2692
   },
   {
@@ -8713,8 +8713,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2692
   },
   {
@@ -8733,12 +8733,12 @@
    "airline": null,
    "price_pp": 1347,
    "price_total": 2694,
-   "typical_total": 3184,
+   "typical_total": 3181,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2694
   },
   {
@@ -8757,12 +8757,12 @@
    "airline": null,
    "price_pp": 1347,
    "price_total": 2695,
-   "typical_total": 3020,
+   "typical_total": 3016,
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-06&ed=2026-12-06&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2687
   },
   {
@@ -8781,12 +8781,12 @@
    "airline": null,
    "price_pp": 1348,
    "price_total": 2696,
-   "typical_total": 3306,
+   "typical_total": 3307,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2696
   },
   {
@@ -8805,12 +8805,12 @@
    "airline": null,
    "price_pp": 1349,
    "price_total": 2697,
-   "typical_total": 3114,
+   "typical_total": 3113,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-03-31&ed=2027-03-31&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2697
   },
   {
@@ -8829,12 +8829,12 @@
    "airline": null,
    "price_pp": 1350,
    "price_total": 2700,
-   "typical_total": 3305,
+   "typical_total": 3303,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-09&ed=2027-05-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2688
   },
   {
@@ -8853,12 +8853,12 @@
    "airline": null,
    "price_pp": 1351,
    "price_total": 2702,
-   "typical_total": 3168,
+   "typical_total": 3165,
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-11-29&ed=2026-11-29&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2702
   },
   {
@@ -8881,8 +8881,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-11-25&ed=2026-11-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2703
   },
   {
@@ -8905,8 +8905,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2703
   },
   {
@@ -8925,12 +8925,12 @@
    "airline": null,
    "price_pp": 1353,
    "price_total": 2705,
-   "typical_total": 3948,
+   "typical_total": 3923,
    "pct_below": 31,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-07&ed=2027-04-07&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2705
   },
   {
@@ -8949,12 +8949,12 @@
    "airline": null,
    "price_pp": 1353,
    "price_total": 2705,
-   "typical_total": 3948,
+   "typical_total": 3923,
    "pct_below": 31,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-04&ed=2027-05-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2705
   },
   {
@@ -8973,12 +8973,12 @@
    "airline": null,
    "price_pp": 1354,
    "price_total": 2708,
-   "typical_total": 3306,
+   "typical_total": 3307,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2696
   },
   {
@@ -8997,12 +8997,12 @@
    "airline": null,
    "price_pp": 1354,
    "price_total": 2708,
-   "typical_total": 2980,
+   "typical_total": 2973,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2708
   },
   {
@@ -9021,12 +9021,12 @@
    "airline": null,
    "price_pp": 1354,
    "price_total": 2708,
-   "typical_total": 2980,
+   "typical_total": 2973,
    "pct_below": 9,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-20&ed=2027-04-20&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2708
   },
   {
@@ -9049,8 +9049,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2711
   },
   {
@@ -9073,8 +9073,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2711
   },
   {
@@ -9097,8 +9097,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2711
   },
   {
@@ -9117,12 +9117,12 @@
    "airline": null,
    "price_pp": 1357,
    "price_total": 2714,
-   "typical_total": 4158,
+   "typical_total": 4157,
    "pct_below": 35,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-13&ed=2026-12-13&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2714
   },
   {
@@ -9145,8 +9145,8 @@
    "pct_below": 15,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-11-26&ed=2026-11-26&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2692
   },
   {
@@ -9165,12 +9165,12 @@
    "airline": null,
    "price_pp": 1358,
    "price_total": 2717,
-   "typical_total": 3314,
+   "typical_total": 3317,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2717
   },
   {
@@ -9193,8 +9193,8 @@
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-11-25&ed=2026-11-25&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2717
   },
   {
@@ -9217,8 +9217,8 @@
    "pct_below": 19,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2717
   },
   {
@@ -9237,12 +9237,12 @@
    "airline": null,
    "price_pp": 1360,
    "price_total": 2720,
-   "typical_total": 3118,
+   "typical_total": 3116,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-11&ed=2027-04-11&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2720
   },
   {
@@ -9261,12 +9261,12 @@
    "airline": null,
    "price_pp": 1360,
    "price_total": 2720,
-   "typical_total": 3118,
+   "typical_total": 3116,
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2720
   },
   {
@@ -9285,12 +9285,12 @@
    "airline": null,
    "price_pp": 1360,
    "price_total": 2720,
-   "typical_total": 2929,
+   "typical_total": 2939,
    "pct_below": 7,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-04-28&ed=2027-04-28&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2720
   },
   {
@@ -9309,12 +9309,12 @@
    "airline": null,
    "price_pp": 1360,
    "price_total": 2720,
-   "typical_total": 2929,
+   "typical_total": 2939,
    "pct_below": 7,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2027-05-05&ed=2027-05-05&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2720
   },
   {
@@ -9333,12 +9333,12 @@
    "airline": null,
    "price_pp": 1360,
    "price_total": 2721,
-   "typical_total": 3168,
+   "typical_total": 3165,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-04&ed=2026-12-04&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2702
   },
   {
@@ -9361,8 +9361,8 @@
    "pct_below": 16,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2026-12-14&ed=2026-12-14&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2653
   },
   {
@@ -9381,12 +9381,12 @@
    "airline": null,
    "price_pp": 1362,
    "price_total": 2724,
-   "typical_total": 3171,
+   "typical_total": 3170,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-09&ed=2026-12-09&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2724
   },
   {
@@ -9405,12 +9405,12 @@
    "airline": null,
    "price_pp": 1363,
    "price_total": 2726,
-   "typical_total": 3314,
+   "typical_total": 3317,
    "pct_below": 18,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2026-12-08&ed=2026-12-08&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2717
   },
   {
@@ -9433,8 +9433,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2726
   },
   {
@@ -9457,8 +9457,8 @@
    "pct_below": 11,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-20&ed=2027-04-20&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2726
   },
   {
@@ -9481,8 +9481,8 @@
    "pct_below": 7,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-14&ed=2027-04-14&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2730
   },
   {
@@ -9505,8 +9505,8 @@
    "pct_below": 7,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-04-20&ed=2027-04-20&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2730
   },
   {
@@ -9529,8 +9529,8 @@
    "pct_below": 13,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-04-18&ed=2027-04-18&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2711
   },
   {
@@ -9553,8 +9553,8 @@
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=7&sd=2027-05-12&ed=2027-05-12&d=PVR&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2639
   },
   {
@@ -9573,12 +9573,12 @@
    "airline": null,
    "price_pp": 1372,
    "price_total": 2744,
-   "typical_total": 4047,
+   "typical_total": 4039,
    "pct_below": 32,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=5&sd=2027-05-02&ed=2027-05-02&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2744
   },
   {
@@ -9597,12 +9597,12 @@
    "airline": null,
    "price_pp": 1372,
    "price_total": 2744,
-   "typical_total": 3184,
+   "typical_total": 3181,
    "pct_below": 14,
    "provider": "CheapCaribbean",
    "url": "https://beachfinder.cheapcaribbean.com/destination-less/results?st=destination-less&o=DSM&n=6&sd=2026-12-06&ed=2026-12-06&d=CUN&isDateRange=true",
-   "last_seen": "2026-10-31",
-   "hist_days": 1,
+   "last_seen": "2026-11-01",
+   "hist_days": 2,
    "hist_min": 2694
   }
  ]
