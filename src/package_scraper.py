@@ -1,16 +1,12 @@
 """
-VERSION: v6 - CheapCaribbean price-cache API (no HTML scraping).
-
-The Beach Finder site loads its prices from a public JSON API. One request per trip length
-returns every hotel's price for every departure date, so a full run is ~4 requests instead
-of ~1,000 page scrapes.
+VERSION: v7 - price-cache API, monthly picks, date calendars, price history, ratings, alerts.
 
     GET {API}/originhotels/DSM   hotel metadata (name, stars, all-inclusive flag, ...)
     GET {API}/DSM/{nights}       prices: priceCacheItems[].td = [{d: "YYYYMMDD", p: price}]
 
 Responses are a JSON string holding base64(gzip(JSON)).
 Run from the repo root:  python src/package_scraper.py
-Writes: site/data/packages.json (deals) and site/data/history.json (daily price lows).
+Writes site/data/{packages,history,ratings,alert_state}.json and alerts_out/ (for the workflow).
 """
 import base64
 import csv
@@ -23,7 +19,11 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timedelta, timezone
+from calendar import monthrange
+from datetime import date, datetime, timedelta, timezone
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import ratings  # noqa: E402
 
 try:
     import tomllib  # Python 3.11+
@@ -34,6 +34,8 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT_DIR, "site", "data")
 OUT_PATH = os.path.join(DATA_DIR, "packages.json")
 HIST_PATH = os.path.join(DATA_DIR, "history.json")
+STATE_PATH = os.path.join(DATA_DIR, "alert_state.json")
+ALERT_DIR = os.path.join(ROOT_DIR, "alerts_out")
 API = "https://api.cheapcaribbean.com/cheapcaribbean/pricecache"
 SEARCH_URL = "https://beachfinder.cheapcaribbean.com/destination-less/results"
 HEADERS = {
@@ -43,7 +45,8 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                   "Chrome/156.0 Safari/537.36",
 }
-HISTORY_DAYS = 120
+HISTORY_DAYS = 90        # keep this much price history
+HISTORY_IDLE_DAYS = 14   # drop a history series not refreshed in this long
 
 
 # ---------------------------------------------------------------- config / io
@@ -96,7 +99,7 @@ def fetch_api(path, config):
     key = os.environ.get("ZENROWS_API_KEY")
     proxy = config.get("proxy", {})
     if key and proxy.get("enable", True):
-        params = {"apikey": key, "url": url}  # plain JSON endpoint: no JS rendering needed
+        params = {"apikey": key, "url": url}
         if proxy.get("premium_proxy"):
             params["premium_proxy"] = "true"
         attempts.append(("zenrows", "https://api.zenrows.com/v1/?" + urllib.parse.urlencode(params)))
@@ -132,6 +135,7 @@ def search_link(origin, code, depart, nights):
 
 
 def build_packages(items, hotels, code_to_region, nights, config, today):
+    """Every qualifying (resort, departure date) price for one trip length."""
     trip, filt = config["trip"], config.get("resort_filters", {})
     adults = config["party"]["adults"]
     per_person = config.get("pricing", {}).get("unit", "per_person") == "per_person"
@@ -176,7 +180,7 @@ def build_packages(items, hotels, code_to_region, nights, config, today):
                 "region": code_to_region[code],
                 "code": code,
                 "stars": stars,
-                "user_rating": None,  # not in this data
+                "user_rating": None,
                 "amenities": [a for a, on in (("All-Inclusive", h.get("All_Inclusive")),
                                               ("Adults Only", h.get("Adults_only"))) if on],
                 "depart_date": dep.isoformat(),
@@ -194,40 +198,149 @@ def build_packages(items, hotels, code_to_region, nights, config, today):
     return out
 
 
-def trim(pkgs, per_resort_nights, cap):
-    pkgs = sorted(pkgs, key=lambda p: p["price_total"])
-    seen, out = {}, []
+def best_per_month(pkgs):
+    """Per (month, nights, resort): the cheapest date, plus a day-of-month price calendar."""
+    best, cal = {}, {}
     for p in pkgs:
-        k = (p["hotel_code"], p["nights"])
-        if seen.get(k, 0) >= per_resort_nights:
+        k = (p["depart_date"][:7], p["nights"], p["hotel_code"])
+        day = int(p["depart_date"][8:10])
+        if k not in cal:
+            y, m = int(k[0][:4]), int(k[0][5:7])
+            cal[k] = [None] * monthrange(y, m)[1]
+        cal[k][day - 1] = p["price_total"]
+        if k not in best or p["price_total"] < best[k]["price_total"]:
+            best[k] = p
+    for k, p in best.items():
+        p["month"] = k[0]
+        p["cal"] = cal[k]
+    return best
+
+
+def select_pool(best, excluded, pool):
+    groups = {}
+    for (month, nights, code), p in best.items():
+        if code in excluded:
             continue
-        seen[k] = seen.get(k, 0) + 1
-        out.append(p)
-    return out[:cap]
+        groups.setdefault((month, nights), []).append(p)
+    out = []
+    for g in groups.values():
+        g.sort(key=lambda p: p["price_total"])
+        out.extend(g[:pool])
+    return out
 
 
-def update_history(pkgs_all, today):
-    """One point per day per (resort, nights): that day's cheapest price."""
+# -------------------------------------------------------------------- history
+def update_history(final, today):
+    """One point per day per (resort, nights, month): that month's cheapest price."""
     hist = load_json(HIST_PATH, {})
     cutoff = (today - timedelta(days=HISTORY_DAYS)).isoformat()
-    lows = {}
-    for p in pkgs_all:
-        k = f"{p['hotel_code']}|{p['nights']}"
-        lows[k] = min(lows.get(k, 10**9), p["price_total"])
-    for k, price in lows.items():
+    idle = (today - timedelta(days=HISTORY_IDLE_DAYS)).isoformat()
+    hist = {k: v for k, v in hist.items() if k.count("|") == 2 and v and v[-1][0] >= idle}
+    for p in final:
+        k = f"{p['hotel_code']}|{p['nights']}|{p['month']}"
         series = [pt for pt in hist.get(k, []) if pt[0] != today.isoformat() and pt[0] >= cutoff]
-        series.append([today.isoformat(), price])
+        series.append([today.isoformat(), p["price_total"]])
         hist[k] = series
     return hist
 
 
+def annotate_history(final, hist, today):
+    for p in final:
+        series = hist.get(f"{p['hotel_code']}|{p['nights']}|{p['month']}", [])
+        p["hist_days"] = len(series)
+        p["hist_min"] = min((pt[1] for pt in series), default=None)
+        ref = None  # the point closest to 7 days ago, if it is 5-10 days old
+        for d, price in series:
+            age = (today - date.fromisoformat(d)).days
+            if 5 <= age <= 10 and (ref is None or abs(age - 7) < abs(ref[0] - 7)):
+                ref = (age, price)
+        p["chg_7d"] = p["price_total"] - ref[1] if ref else None
+
+
+# --------------------------------------------------------------------- alerts
+def rule_matches(rule, p):
+    if rule.get("months") and p["month"] not in rule["months"]:
+        return False
+    if rule.get("codes") and p["code"] not in rule["codes"]:
+        return False
+    if rule.get("nights") and p["nights"] not in rule["nights"]:
+        return False
+    if rule.get("min_stars") and (p["stars"] or 0) < rule["min_stars"]:
+        return False
+    tests = []
+    if "max_total" in rule:
+        tests.append(p["price_total"] <= rule["max_total"])
+    if "max_per_night" in rule:
+        tests.append(p["price_total"] / p["nights"] <= rule["max_per_night"])
+    if "min_pct_below" in rule:
+        tests.append(p["pct_below"] >= rule["min_pct_below"])
+    return bool(tests) and all(tests)  # a rule with no price test never fires
+
+
+def run_alerts(best_pkgs, config, today):
+    acfg = config.get("alerts", {})
+    if not acfg.get("enabled") or not acfg.get("rules"):
+        return
+    drop = acfg.get("realert_drop_pct", 5) / 100
+    cap = acfg.get("max_per_rule", 8)
+    state = load_json(STATE_PATH, {})
+    this_month = today.strftime("%Y-%m")
+    state = {k: v for k, v in state.items() if k.split("|")[-1] >= this_month}  # drop past months
+
+    lines, total_new, top, low = [], 0, [], None
+    for rule in acfg["rules"]:
+        hits = sorted((p for p in best_pkgs if rule_matches(rule, p)), key=lambda p: p["price_total"])
+        fresh, used = [], set()
+        for p in hits:
+            key = f"{p['hotel_code']}|{p['month']}"  # one alert per resort per month (cheapest option)
+            if key in used:
+                continue
+            used.add(key)
+            old = state.get(key)
+            if old is None or p["price_total"] <= old * (1 - drop):
+                fresh.append(p)
+                state[key] = p["price_total"]
+        if not fresh:
+            continue
+        total_new += len(fresh)
+        lines.append(f"## {rule.get('name', 'Deal alert')}\n")
+        for p in fresh[:cap]:
+            fl = "https://www.google.com/travel/flights?q=" + urllib.parse.quote(
+                f"Flights to {p['code']} from {config['origins'][0]} on {p['depart_date']} through {p['return_date']}")
+            below = f" · {p['pct_below']}% below typical" if p["pct_below"] >= 5 else ""
+            lines.append(f"- **{p['resort']}** ({p['region']}, {p['stars']}★): **${p['price_total']:,}** for "
+                         f"{config['party']['adults']} · {p['depart_date']} to {p['return_date']} "
+                         f"({p['nights']} nights){below} · [book]({p['url']}) · [flights]({fl})")
+            low = p["price_total"] if low is None else min(low, p["price_total"])
+            if len(top) < 3:
+                top.append(f"{p['resort']}: ${p['price_total']:,} ({p['depart_date']}, {p['nights']} nights)")
+        if len(fresh) > cap:
+            lines.append(f"- ...and {len(fresh) - cap} more matches on the site.")
+        lines.append("")
+
+    save_json(STATE_PATH, state)
+    if not total_new:
+        print("Alerts: nothing new.")
+        return
+    os.makedirs(ALERT_DIR, exist_ok=True)
+    with open(os.path.join(ALERT_DIR, "title.txt"), "w", encoding="utf-8") as f:
+        f.write(f"Deal alert: {total_new} new or lower-priced deal(s), best ${low:,}")
+    with open(os.path.join(ALERT_DIR, "alert.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    with open(os.path.join(ALERT_DIR, "ntfy.txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(top))
+    print(f"Alerts: {total_new} new deal(s) written to alerts_out/.")
+
+
+# ----------------------------------------------------------------------- main
 def main():
-    print("Mexico Resort Tracker v6 (price-cache API)")
+    print("Mexico Resort Tracker v7")
     config = load_config()
     code_to_region = load_destinations()
     origin = config["origins"][0]
     today = datetime.now(timezone.utc).date()
     pause = config.get("providers", {}).get("pause_seconds", 3.0)
+    pool = config["output"]["per_month_pool"]
 
     raw_hotels = fetch_api(f"originhotels/{origin}", config)
     if not raw_hotels:
@@ -245,24 +358,44 @@ def main():
         pk = build_packages(items, hotels, code_to_region, n, config, today)
         print(f"  {n} nights: {len(items)} price items -> {len(pk)} qualifying date prices")
         all_pkgs.extend(pk)
-
     if ok == 0:
         raise SystemExit("Every price request failed. Leaving packages.json untouched.")
 
-    hist = update_history(all_pkgs, today)
-    final = trim(all_pkgs, config["output"]["max_per_resort_nights"], config["output"]["max_packages"])
-    for p in final:  # attach history context
-        series = hist.get(f"{p['hotel_code']}|{p['nights']}", [])
-        p["hist_days"] = len(series)
-        p["hist_min"] = min((pt[1] for pt in series), default=None)
+    best = best_per_month(all_pkgs)
+
+    # Ratings: look up the resorts currently in contention, then drop known-low-rated ones.
+    rcfg = config.get("ratings", {})
+    cache = ratings.load()
+    wanted, seen = [], set()
+    for p in sorted(select_pool(best, set(), pool), key=lambda p: p["price_total"]):
+        if p["hotel_code"] not in seen:
+            seen.add(p["hotel_code"])
+            wanted.append((p["hotel_code"], p["resort"], p["region"]))
+    used = ratings.refresh(cache, wanted, rcfg, today)
+    if used:
+        ratings.save(cache)
+        print(f"  ratings: {used} lookups")
+    min_rating = config.get("resort_filters", {}).get("min_user_rating")
+    excluded = set()
+    for p in best.values():
+        r, cnt = ratings.rating10(cache.get(p["hotel_code"]), rcfg.get("min_reviews", 100))
+        p["user_rating"], p["rating_count"] = r, cnt
+        if min_rating and r is not None and r < min_rating:
+            excluded.add(p["hotel_code"])
+
+    final = sorted(select_pool(best, excluded, pool), key=lambda p: (p["month"], p["price_total"]))
+    hist = update_history(final, today)
+    annotate_history(final, hist, today)
+    run_alerts([p for p in best.values() if p["hotel_code"] not in excluded], config, today)
 
     save_json(OUT_PATH, {
         "generated": datetime.now(timezone.utc).isoformat(),
-        "stats": {"night_lengths_ok": ok, "qualifying_prices": len(all_pkgs)},
+        "stats": {"night_lengths_ok": ok, "qualifying_prices": len(all_pkgs), "excluded_low_rated": len(excluded)},
         "packages": final,
-    }, indent=1)
+    })
     save_json(HIST_PATH, hist)
-    print(f"Done. {len(final)} deals saved ({len(all_pkgs)} qualifying prices scanned).")
+    print(f"Done. {len(final)} deals saved ({len(all_pkgs)} qualifying prices scanned, "
+          f"{len(excluded)} low-rated resorts hidden).")
 
 
 if __name__ == "__main__":
