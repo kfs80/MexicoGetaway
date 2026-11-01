@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mexico Resort Deals</title>
+<style>
+  :root { --bg:#f6f7f9; --ink:#1d2433; --mute:#6b7385; --line:#dfe3ea; --accent:#2b5cff; --card:#fff; --foot:#fafbfc; --img:#eef1f5; --good:#16a34a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12151b; --ink:#e8ebf2; --mute:#98a1b5; --line:#2a3040; --accent:#7d9bff; --card:#1a1f29; --foot:#161a23; --img:#222836; --good:#4ade80; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.35 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:24px 20px 16px; background:var(--card); border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 8px; font-size:24px; }
+  .sub { color:var(--mute); font-size:14px; }
+
+  .months { display:flex; gap:8px; padding:16px 20px 0; overflow-x:auto; }
+  .months button { font:inherit; padding:8px 14px; border-radius:999px; border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; white-space:nowrap; }
+  .months button.on { background:var(--ink); color:var(--bg); border-color:var(--ink); }
+  .months small { color:var(--mute); margin-left:4px; }
+  .months button.on small { color:var(--bg); opacity:.75; }
+
+  .controls { padding:16px 20px; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  select { font:inherit; padding:8px 12px; border-radius:6px; border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; }
+  .more { font:inherit; padding:8px 12px; border-radius:6px; border:1px solid var(--line); background:transparent; color:var(--accent); cursor:pointer; }
+
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:20px; padding:0 20px 40px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; position:relative;
+          transition:transform .2s, box-shadow .2s; display:flex; flex-direction:column; text-decoration:none; color:inherit; }
+  .card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.12); }
+  .rank { position:absolute; top:10px; left:10px; width:28px; height:28px; border-radius:50%; background:var(--ink); color:var(--bg); font-weight:700; display:flex; align-items:center; justify-content:center; }
+  .card-body { padding:16px 16px 12px 48px; flex-grow:1; }
+  .region { font-size:12px; color:var(--mute); font-weight:600; text-transform:uppercase; letter-spacing:.05em; margin-bottom:4px; }
+  .resort { font-size:17px; font-weight:700; margin:0 0 6px; line-height:1.2; }
+  .stars { color:#f59e0b; letter-spacing:2px; margin-bottom:10px; font-size:14px; }
+  .stars .meta { color:var(--mute); font-size:12px; letter-spacing:0; margin-left:6px; }
+  .details { display:flex; flex-direction:column; gap:5px; font-size:13px; color:var(--mute); }
+  .good { color:var(--good); font-weight:600; }
+  .card-footer { padding:14px 16px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:flex-end; background:var(--foot); }
+  .price { font-size:22px; font-weight:700; font-variant-numeric:tabular-nums; }
+  .price-sub { font-size:11px; color:var(--mute); font-weight:400; }
+  .provider { font-size:12px; font-weight:600; color:var(--accent); }
+  .flt { color:var(--accent); font-weight:600; cursor:pointer; }
+  .empty { padding:20px; color:var(--mute); grid-column:1/-1; }
+  .foot { padding:0 20px 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌴 Mexico Resort Deals</h1>
+  <div class="sub" id="last-updated">Loading…</div>
+</header>
+
+<div class="months" id="months"></div>
+
+<div class="controls">
+  <select id="sort" aria-label="Sort">
+    <option value="ppn">Cheapest per night</option>
+    <option value="price">Lowest total price</option>
+    <option value="deal">Biggest discount vs. typical</option>
+    <option value="stars">Highest star rating</option>
+  </select>
+  <select id="filter-region" aria-label="Region"><option value="all">All regions</option></select>
+  <select id="filter-nights" aria-label="Nights"><option value="all">Any trip length</option></select>
+  <select id="topn" aria-label="How many">
+    <option value="3">Top 3</option><option value="5" selected>Top 5</option><option value="10">Top 10</option>
+  </select>
+</div>
+
+<div class="grid" id="grid"></div>
+<div class="foot sub" id="foot"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+let PACKAGES = [];
+let MONTH = null;
+
+const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : '#';
+const parseDay = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
+const fmtDay = s => parseDay(s).toLocaleDateString(undefined, { weekday:'short', month:'short', day:'numeric' });
+const monthName = ym => parseDay(ym + '-01').toLocaleDateString(undefined, { month:'long', year:'numeric' });
+const monthShort = ym => parseDay(ym + '-01').toLocaleDateString(undefined, { month:'short', year:'2-digit' });
+const renderStars = n => n == null ? '' : '★'.repeat(Math.floor(n)) + (n % 1 ? '½' : '');
+const money = n => '$' + Math.round(n).toLocaleString();
+const ppn = p => p.price_total / p.nights;
+// Opens Google Flights for this destination and dates so stops, layover and total travel time can be checked in one click.
+const flightsUrl = p => /^[A-Z]{3}$/.test(p.code) && /^\d{4}-\d{2}-\d{2}$/.test(p.depart_date) && /^\d{4}-\d{2}-\d{2}$/.test(p.return_date)
+  ? 'https://www.google.com/travel/flights?q=' + encodeURIComponent(`Flights to ${p.code} from DSM on ${p.depart_date} through ${p.return_date}`) : '#';
+
+function filtered() {
+  const region = $('#filter-region').value, nights = $('#filter-nights').value;
+  return PACKAGES.filter(p => (region === 'all' || p.code === region) && (nights === 'all' || String(p.nights) === nights));
+}
+
+function renderMonths() {
+  const base = filtered();
+  const months = [...new Set(PACKAGES.map(p => p.month))].sort();
+  if (!months.includes(MONTH)) MONTH = months[0] || null;
+  $('#months').innerHTML = months.map(m => {
+    const best = base.filter(p => p.month === m).reduce((a, p) => Math.min(a, ppn(p)), Infinity);
+    return `<button data-m="${esc(m)}" class="${m === MONTH ? 'on' : ''}">${esc(monthShort(m))}` +
+           `${isFinite(best) ? `<small>from ${money(best)}/night</small>` : ''}</button>`;
+  }).join('');
+  document.querySelectorAll('#months button').forEach(b => b.onclick = () => { MONTH = b.dataset.m; render(); });
+}
+
+function render() {
+  renderMonths();
+  const sort = $('#sort').value, topn = +$('#topn').value;
+  const pkgs = filtered().filter(p => p.month === MONTH);
+  const cmp = {
+    ppn:   (a, b) => ppn(a) - ppn(b),
+    price: (a, b) => a.price_total - b.price_total,
+    deal:  (a, b) => (b.pct_below ?? 0) - (a.pct_below ?? 0),
+    stars: (a, b) => (b.stars ?? 0) - (a.stars ?? 0) || ppn(a) - ppn(b),
+  }[sort];
+  pkgs.sort(cmp);
+
+  // one card per resort within the month (best option under the current sort)
+  const seen = new Set(), top = [];
+  for (const p of pkgs) { if (!seen.has(p.hotel_code)) { seen.add(p.hotel_code); top.push(p); } }
+  const shown = top.slice(0, topn);
+
+  $('#foot').textContent = MONTH ? `${monthName(MONTH)}: showing ${shown.length} of ${top.length} resorts. Each resort appears once, with its cheapest matching date.` : '';
+  if (!shown.length) {
+    $('#grid').innerHTML = '<div class="empty">' + (PACKAGES.length ? 'No deals match these filters.' : 'No deals yet. Check the latest Actions run.') + '</div>';
+    return;
+  }
+  $('#grid').innerHTML = shown.map((p, i) => {
+    const extras = (p.amenities || []).join(' · ');
+    const disc = (p.pct_below ?? 0) >= 5 ? `<div class="good">${esc(p.pct_below)}% below this resort's typical ${esc(p.nights)}-night price</div>` : '';
+    const low = (p.hist_days ?? 0) >= 7 && p.hist_min != null ? `<div>Lowest seen in ${esc(p.hist_days)} days: ${money(p.hist_min)}</div>` : '';
+    return `
+      <a href="${esc(safeUrl(p.url))}" target="_blank" rel="noopener noreferrer" class="card">
+        <div class="rank">${i + 1}</div>
+        <div class="card-body">
+          <div class="region">${esc(p.region)}</div>
+          <h2 class="resort">${esc(p.resort)}</h2>
+          <div class="stars">${renderStars(p.stars)}<span class="meta">${esc(extras)}</span></div>
+          <div class="details">
+            <div>📅 ${esc(fmtDay(p.depart_date))} → ${esc(fmtDay(p.return_date))} · ${esc(p.nights)} nights</div>
+            <div>💲 ${money(ppn(p))} per night for two</div>
+            <div><span class="flt" data-flights="${esc(flightsUrl(p))}">✈ Check flights (stops, layover, travel time) ↗</span></div>
+            ${disc}${low}
+          </div>
+        </div>
+        <div class="card-footer">
+          <div>
+            <div class="price">${money(p.price_total)}</div>
+            <div class="price-sub">Total for 2 adults · ${money(p.price_pp)} pp, flights included</div>
+          </div>
+          <div class="provider">${esc(p.provider)} ↗</div>
+        </div>
+      </a>`;
+  }).join('');
+}
+
+async function init() {
+  try {
+    const res = await fetch('data/packages.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    PACKAGES = data.packages || [];
+    $('#filter-region').innerHTML = '<option value="all">All regions</option>' +
+      [...new Map(PACKAGES.map(p => [p.code, p.region]))].map(([c, n]) => `<option value="${esc(c)}">${esc(n)}</option>`).join('');
+    $('#filter-nights').innerHTML = '<option value="all">Any trip length</option>' +
+      [...new Set(PACKAGES.map(p => p.nights))].sort((a, b) => a - b).map(n => `<option value="${esc(n)}">${esc(n)} nights</option>`).join('');
+    const when = data.generated ? new Date(data.generated).toLocaleString() : 'never';
+    $('#last-updated').textContent = `All-inclusive packages out of DSM, best deals by departure month. Last updated: ${when}`;
+  } catch (e) {
+    $('#last-updated').textContent = 'Could not load deal data.';
+    console.error(e);
+  }
+  render();
+}
+
+$('#grid').addEventListener('click', e => {
+  const f = e.target.closest('[data-flights]');
+  if (f) { e.preventDefault(); window.open(f.dataset.flights, '_blank', 'noopener'); }
+});
+
+['#sort', '#filter-region', '#filter-nights', '#topn'].forEach(s => $(s).onchange = render);
+init();
+</script>
+</body>
+</html>
