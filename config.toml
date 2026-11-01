@@ -22,18 +22,45 @@ unit = "per_person"
 
 [resort_filters]
 min_star_rating       = 4.0
+min_user_rating       = 8.0        # 10-pt scale (Google rating x2). Applied only to resorts with a
+                                   # known rating (see [ratings]); unknown-rating resorts still show.
 require_all_inclusive = true       # uses the site's own All_Inclusive flag
 adults_only           = false
-# Not available in this data: guest rating and beachfront. The hotel list does have
-# Beach_Relaxing / Beach_Swimming scores (scale unverified) if you want a beach proxy later.
+# Beachfront isn't in the price data. The hotel list has Beach_Relaxing / Beach_Swimming scores
+# (scale unverified) if you want a beach proxy later.
 
 [providers]
 active = ["cheapcaribbean"]        # more sites = more adapters; see README
 pause_seconds = 3.0
 
 [output]
-max_packages          = 400        # total deals kept in site/data/packages.json
-max_per_resort_nights = 2          # cheapest N departure dates per resort per trip length
+# For every departure month and trip length, keep each resort's cheapest date, then this many
+# resorts. The page shows the top few; the rest lets region/length filters still fill a list.
+per_month_pool = 25
+
+[ratings]
+# Needs a GOOGLE_PLACES_API_KEY repo secret; without it ratings stay unknown and nothing breaks.
+enabled              = true
+max_lookups_per_run  = 80          # spend at most this many Places lookups per run
+refresh_days         = 60          # re-check a resort's rating this often
+min_reviews          = 100         # ignore ratings based on fewer reviews
+
+[alerts]
+# New or lower-priced deals matching a rule become a GitHub issue (which emails/pushes you)
+# and, if you add an NTFY_TOPIC secret, a phone notification. Edit or add rules freely.
+enabled           = true
+realert_drop_pct  = 5              # re-alert on the same resort/month only if it drops this much more
+max_per_rule      = 8
+
+[[alerts.rules]]
+name           = "Great deals, any month (25%+ below typical, under $2,500)"
+min_pct_below  = 25
+max_total      = 2500
+
+[[alerts.rules]]
+name           = "March trips under $1,800"
+months         = ["2027-03"]
+max_total      = 1800
 
 [proxy]
 # Used only if the direct request to the API is blocked (e.g. from GitHub's servers).
