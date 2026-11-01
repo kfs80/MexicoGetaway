@@ -163,7 +163,8 @@ async function init() {
     const res = await fetch('data/packages.json', { cache: 'no-cache' });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
-    PACKAGES = data.packages || [];
+    PACKAGES = (data.packages || []).filter(p => p.depart_date);
+    PACKAGES.forEach(p => { p.month = p.month || p.depart_date.slice(0, 7); }); // older data files have no month field
     $('#filter-region').innerHTML = '<option value="all">All regions</option>' +
       [...new Map(PACKAGES.map(p => [p.code, p.region]))].map(([c, n]) => `<option value="${esc(c)}">${esc(n)}</option>`).join('');
     $('#filter-nights').innerHTML = '<option value="all">Any trip length</option>' +
